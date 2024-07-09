@@ -17,22 +17,23 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
-import * as contentful from "contentful";
 
 const config = useRuntimeConfig();
-
+// Define a ref to hold fetched data
 const reviews = ref([]);
 const spaceName = config.public.CONTENTFUL_SPACE_ID;
 const accessTokenName = config.public.CONTENTFUL_ACCESS_KEY;
 
-// Create Contentful client
-const client = contentful.createClient({
-  space: spaceName,
-  accessToken: accessTokenName,
-});
+let client;
 
 async function fetchEntries() {
   console.log("spaceName: ", spaceName);
+  const contentful = await import("contentful");
+  client = contentful.createClient({
+    space: spaceName,
+    accessToken: accessTokenName,
+  });
+
   const res = await client.getEntries({
     content_type: "book", // Ensure this matches the actual ID in Contentful
   });
