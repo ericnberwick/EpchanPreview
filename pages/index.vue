@@ -2,7 +2,7 @@
   <div class="container mx-auto mt-10">
     <Navbar />
     <div class="w-full flex justify-left">
-      <h1 class="mt-6 text-4xl font-bold text-center mb-8">Book Reviews</h1>
+      <h1 class="mt-6 text-4xl font-bold text-center mb-8">Book Reviews {{ spaceName  }} {{ accessTokenName }}</h1>
     </div>
     <hr class="border-2 border-black">
     <div v-for="review in reviews" :key="review.sys.id">
@@ -17,8 +17,8 @@
 
   <script setup>
   import { ref, onMounted } from 'vue'
-  import { createClient } from "contentful"
-  import RichTextRenderer from 'contentful-rich-text-vue-renderer';
+  //import { createClient } from "contentful"
+  //import RichTextRenderer from 'contentful-rich-text-vue-renderer';
   
   const config = useRuntimeConfig();
   // Define a ref to hold fetched data
@@ -26,26 +26,26 @@
   const spaceName = config.public.CONTENTFUL_SPACE_ID
   const accessTokenName = config.public.CONTENTFUL_ACCESS_KEY
   
-  // Create Contentful client
-  const client = createClient({
-    space: spaceName,
-    accessToken: accessTokenName
-  })
+  // // Create Contentful client
+  // const client = createClient({
+  //   space: spaceName,
+  //   accessToken: accessTokenName
+  // })
   
-  async function fetchEntries() {
-    console.log("spacename ", spaceName)
-    const res = await client.getEntries({
-      content_type: 'book' // Ensure this matches the actual ID in Contentful
-    });
-    // Assign data to reviews ref
-    reviews.value = res.items;
-    console.log("res ", res)
-  }
+  // async function fetchEntries() {
+  //   console.log("spacename ", spaceName)
+  //   const res = await client.getEntries({
+  //     content_type: 'book' // Ensure this matches the actual ID in Contentful
+  //   });
+  //   // Assign data to reviews ref
+  //   reviews.value = res.items;
+  //   console.log("res ", res)
+  // }
   
-  // Fetch data on component mount
-  onMounted(() => {
-    fetchEntries();
-  });
+  // // Fetch data on component mount
+  // onMounted(() => {
+  //   fetchEntries();
+  // });
   </script>
   
 
