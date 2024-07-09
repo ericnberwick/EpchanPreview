@@ -1,0 +1,21 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/image": "^1.7.0",
+    "@nuxtjs/tailwindcss": "^6.12.0",
+    "contentful": "^10.12.4",
+    "contentful-rich-text-vue-renderer": "^3.1.0",
+    "dotenv": "^16.4.5",
+    "nuxt": "^3.12.2",
+    "vue": "latest"
+  }
+}
