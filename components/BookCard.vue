@@ -12,6 +12,7 @@
           <!-- Button in column 1, row 3 -->
           <div class="col-start-3 col-end-4 row-start-1 row-end-2 flex items-center justify-center">
             <a :href="review.fields.amazonLink.content[0].content[0].value">
+                
                 <button class="bg-yellow-600 text-white font-bold py-2 px-4 rounded hover:bg-yellow-700 focus:outline-none focus:shadow-outline">
                      Amazon
                 </button>

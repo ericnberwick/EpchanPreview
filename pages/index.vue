@@ -2,7 +2,7 @@
   <div class="container mx-auto mt-10">
     <Navbar />
     <div class="w-full flex justify-left">
-      <h1 class="mt-6 text-4xl font-bold text-center mb-8">Book Reviews {{ spaceName  }} {{ accessTokenName }}</h1>
+      <h1 class="mt-6 text-4xl font-bold text-center mb-8">Book Reviews</h1>
     </div>
     <hr class="border-2 border-black">
     <div v-for="review in reviews" :key="review.sys.id">
