@@ -13,10 +13,4 @@ export default defineNuxtConfig({
     }
   }
 
-  console.log('Contentful Configurations:');
-  console.log('Space ID:', process.env.CONTENTFUL_SPACE_ID);
-  console.log('Access Token:', process.env.CONTENTFUL_ACCESS_TOKEN);
-  console.log('Environment:', process.env.CONTENTFUL_ENVIRONMENT);
-
-
 })
