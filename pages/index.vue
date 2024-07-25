@@ -123,9 +123,12 @@
 
 
 
-        <div v-for="review in reviews" :key="review.sys.id">
-          <BookCardLand :review="review" />
-        </div>
+        <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 w-full">
+  <div v-for="review in reviews" :key="review.sys.id">
+    <BookCardLand :review="review" />
+  </div>
+</div>
+
 
       </div>
 

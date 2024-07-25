@@ -10,9 +10,13 @@
 </div>
   
       
-      <div class="ml-20 w-screen" v-for="review in reviews" :key="review.sys.id">
-        <BookCard :review="review" />
-      </div>
+<div class="ml-20 grid gap-8 grid-cols-1 sm:grid-cols-2 ">
+  <div v-for="review in reviews" :key="review.sys.id">
+    <BookCard :review="review" class="w-full"/>
+  </div>
+</div>
+
+
   
   
     </div>
