@@ -1,12 +1,15 @@
 <template>
     <div class="">
-      <Navbar page="book" />
-  
-      <div class="container mx-auto text-center mt-2">
+      <Navbar page="books" />
+      <div class="px-8 py-24">
+  <div class="container mx-auto text-center">
     <h2 class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-blue-gray-900 mb-4">Books</h2>
-    <p class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500">Explores Ernest's collection of books he has written over the years</p>
+    <p class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500">Check out Ernest collection of books he has written over the years</p>
   </div>
-      <hr class="w-full border-2 border-black">
+  
+</div>
+  
+      
       <div class="ml-20 w-screen" v-for="review in reviews" :key="review.sys.id">
         <BookCard :review="review" />
       </div>

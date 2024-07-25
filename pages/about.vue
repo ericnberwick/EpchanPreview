@@ -2,10 +2,13 @@
     <div class="">
       <Navbar page="about"/>
   
-      <div class="w-full flex justify-center">
-        <h1 class="mt-6 text-4xl font-bold text-center mb-8">About</h1>
-      </div>
-      <hr class="w-full border-2 border-black">
+      <div class="px-8 py-24">
+<div class="container mx-auto text-center">
+  <h2 class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-blue-gray-900 mb-4">About</h2>
+  <p class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500">Find out more about who we are</p>
+</div>
+
+</div>
       <div v-for="profile in profiles" :key="profile.sys.id">
         <AboutCard :about="profile"></AboutCard>
       </div>
