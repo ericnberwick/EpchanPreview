@@ -6,11 +6,10 @@
     <p class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500">Check out our affordable pricing options for delicious meals.</p>
   </div>
   <div class="mt-24">
-    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3" v-for="course in courses" :key="course.sys.id">
-      <CourseCard :course="course"/>
-      
-      
-      
+    <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div v-for="course in courses" :key="course.sys.id">
+        <CourseCard :course="course"/>
+      </div>
     </div>
   </div>
 </section>
