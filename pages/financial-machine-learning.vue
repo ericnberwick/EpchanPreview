@@ -1,6 +1,7 @@
 <template>
     <div class="">
       <Navbar page="financial-machine-learning"/>
+      
   
       <div class="px-8 py-24">
   <div class="container mx-auto text-center">
@@ -8,10 +9,18 @@
     <p class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500">Check out our affordable pricing options for delicious meals.</p>
   </div>
 
-  <div class="ml-20 w-screen" v-for="paragraph in paragraphs" :key="paragraph.sys.id">
-    <h2 class="font-bold my-4">{{ paragraph.fields.title }}</h2>
+  <div class="w-full h-56 overflow-hidden mb-8">
+    <img src="public/img/finance-banner.jpg" class="w-full h-full object-cover" style="object-position: center bottom;">
+  </div>
+
+  <div class="w-full ">
+    <div class="ml-20 " v-for="paragraph in sortedParagraphs" >
+    <h2 v-if="paragraph.fields.title != 'notitle'" class="font-bold my-4 text-xl" >{{ paragraph.fields.title }}</h2>
     <RichTextRenderer class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500" :document="paragraph.fields.body" />
   </div>
+  </div>
+
+  
   
 </div>
       
@@ -26,7 +35,7 @@ import { ref, onMounted } from "vue";
 import RichTextRenderer from 'contentful-rich-text-vue-renderer';
 import {Entry} from "contentful";
 
-
+var sortedParagraphs = ref([]);
 
 const config = useRuntimeConfig();
 // Define a ref to hold fetched data
@@ -54,6 +63,8 @@ async function fetchEntries() {
   // Assign data to reviews ref
   console.log("res.items ", res.items)
   paragraphs.value = res.items ;
+  sortedParagraphs.value = res.items.slice().sort((a, b) => a.fields.order - b.fields.order);
+  console.log("sortedparagrahps" , sortedParagraphs);
 }
 
 // Fetch data on component mount

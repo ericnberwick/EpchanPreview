@@ -5,6 +5,11 @@
     <h2 class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-blue-gray-900 mb-4">Workshops</h2>
     <p class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500">Check out our affordable pricing options for delicious meals.</p>
   </div>
+
+  <div class="w-full h-56 overflow-hidden ">
+    <img src="public/img/workshop.jpg" class="w-full h-full object-cover" style="object-position: center bottom;">
+  </div>
+
   <div class="mt-24">
     <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       <div v-for="course in courses" :key="course.sys.id">

@@ -8,6 +8,7 @@
   <p class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500">Dr. Chan is the founder of QTS Capital Management, LLC., a commodity pool operator and commodity trading advisor. QTS manages a commodity pool (hedge fund) as well as individual brokerage accounts. Please visit www.qtscm.com for an overview of its service.</p>
 </div>
 
+
 </div>
     
 
