@@ -146,7 +146,8 @@
 <script setup>
 import { defineProps, ref, onMounted } from 'vue'
 
-const navbarPanelOpen = ref([]);
+const navbarPanelOpen = ref(false);
+
 const props = defineProps({
   page: {
     type: String,
