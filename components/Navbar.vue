@@ -161,7 +161,6 @@ onMounted(() => {
 
 const toggleNavbar = () => {
   navbarPanelOpen.value = !navbarPanelOpen.value
-  console.log("navbar toggled : ", navbarPanelOpen.value);
 }
 </script>
 
