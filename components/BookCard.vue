@@ -19,8 +19,7 @@
           class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500"
           :document="review.fields.description" />
         <div class="flex items-center gap-4">
-          <img
-            src="https://bucket.material-tailwind.com/magic-ai/6b1c5941d417a2a32baee89c2f3d1975d7d4fb81e486ed43dc1082ac54b0658b.jpg"
+          <img src="/img/ernie.png"
             class="inline-block relative object-cover object-center !rounded-full w-12 h-12 rounded-lg" />
           <div>
             <p

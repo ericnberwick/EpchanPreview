@@ -15,7 +15,7 @@
             <NuxtImg class="absolute inset-0 h-full w-full object-cover" src="/img/back2.jpg" alt="Background Image" />
             <div class="container mx-auto relative">
               <div class="flex flex-col w-full lg:w-1/2 md:ml-16 items-start md:items-start px-6 tracking-wide">
-                <p class="text-black text-2xl my-4">Welcome to EP Chan</p>
+                <p class="text-black text-2xl my-4">Welcome to E.P. Chan & Associates</p>
               </div>
             </div>
           </div>

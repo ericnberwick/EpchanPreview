@@ -7,7 +7,7 @@
           class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-blue-gray-900 mb-4">
           Books</h2>
         <p class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500">
-          Check out Ernest collection of books he has written over the years</p>
+        </p>
       </div>
 
       <div class="w-full h-56 overflow-hidden mb-8">
