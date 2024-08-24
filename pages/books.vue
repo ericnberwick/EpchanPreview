@@ -1,8 +1,8 @@
 <template>
   <div class="">
     <Navbar page="books" />
-    <div class="px-8 py-24">
-      <div class="container mx-auto text-center">
+    <div class="px-8 py-24 ">
+      <div class="container mx-auto text-center ">
         <h2
           class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-blue-gray-900 mb-4">
           Books</h2>
@@ -16,12 +16,14 @@
 
     </div>
 
-
-    <div class="ml-20 grid gap-8 grid-cols-1 sm:grid-cols-2 ">
-      <div v-for="review in reviews" :key="review.sys.id">
-        <BookCard :review="review" class="w-full" />
+    <div class=" w-screen flex justify-center px-10">
+      <div class=" grid gap-8 grid-cols-1 sm:grid-cols-2 ">
+        <div v-for="review in reviews" :key="review.sys.id">
+          <BookCard :review="review" class="w-full" />
+        </div>
       </div>
     </div>
+
   </div>
 </template>
 

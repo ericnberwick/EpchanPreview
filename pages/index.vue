@@ -89,13 +89,18 @@
 
 
         <!-- <RichTextRenderer :document="welcome[0].fields?.welcomeText" class="mt-8 mb-8"/> -->
-        <p>Welcome to the official website of Dr. Ernest P. Chan, a seasoned quantitative trader with a deep passion for
-          developing and implementing advanced trading algorithms. With years of expertise in financial markets and a
-          strong foundation in data science, Dr. Chan is dedicated to unlocking value through quantitative analysis and
-          algorithmic trading solutions. Whether you are new to the trading world or looking to refine your strategies,
-          this platform offers a range of resources and insights designed to help you achieve exceptional trading
-          performance. Engage with Dr. Chan’s pioneering work and discover how quantitative approaches can transform
-          your trading endeavors.</p>
+        <p>Dr. Ernest P. Chan, is an expert in machine learning and the application of quantitative models for asset
+          management. He founded and serves as non-executive chairman of a hedge fund and SMAs at <a
+            class="text-blue-600 hover:text-blue-800 underline hover:no-underline font-medium transition duration-300 ease-in-out"
+            href="https://qtscm.com/">QTS Capital
+            Management, LLC</a> and a machine learning firm <a href="https://predictnow.ai/"
+            class="text-blue-600 hover:text-blue-800 underline hover:no-underline font-medium transition duration-300 ease-in-out">Predictnow.ai</a>
+          that
+          focuses on risk management and adaptive
+          optimization using machine learning. Dr. Chan has built and traded numerous quantitative models for investment
+          banks and hedge funds in the past. He has served individual and institutional clients in Australia, Canada,
+          China, France, Germany, India, Israel, Italy, Korea, the Netherlands, Peru, Singapore, South Africa, Sweden,
+          the United Kingdom, and the United States since 2006.</p>
 
 
       </div>

@@ -18,7 +18,7 @@
       </div>
 
       <div class="w-full ">
-        <div class="ml-20 " v-for="paragraph in sortedParagraphs">
+        <div class=" " v-for="paragraph in sortedParagraphs">
           <h2 v-if="paragraph.fields.title != 'notitle'" class="font-bold my-4 text-xl">{{ paragraph.fields.title }}
           </h2>
           <RichTextRenderer
@@ -26,6 +26,8 @@
             :document="paragraph.fields.body" />
         </div>
       </div>
+
+
 
 
 

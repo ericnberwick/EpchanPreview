@@ -1,12 +1,11 @@
 <template>
-  <div class="container grid  gap-8 pr-2">
+  <div class="container grid  gap-8 ">
     <div
-      class="relative flex-col bg-clip-border rounded-xl bg-transparent text-gray-700 shadow-none grid gap-2 item sm:grid-cols-2">
-      <div class="relative bg-clip-border rounded-xl overflow-hidden bg-white text-gray-700 shadow-lg m-0">
+      class="relative flex-col bg-clip-border rounded-lg bg-transparent text-gray-700 shadow-none grid gap-2 item sm:grid-cols-2 border-2 border-black">
+      <div class="relative bg-clip-border  overflow-hidden bg-white text-gray-700 shadow-lg m-0">
 
         <a :href="review.fields.linkToBook">
-          <img :src="'https:' + review.fields.bookImage.fields.file.url" alt="Revolutionizing Our Production Process"
-            class="object-cover w-full " />
+          <img :src="'https:' + review.fields.bookImage.fields.file.url" class="object-cover w-full " />
         </a>
       </div>
       <div class="p-6 px-2 sm:pr-6 sm:pl-4">
@@ -17,7 +16,7 @@
         <RichTextRenderer
           class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500"
           :document="review.fields.description" />
-        <a class="inline-block" :href="review.fields.amazonLink.content[0].content[0].value">
+        <a class="inline-block" :href="review.fields.linkToBook">
           <button
             class="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-pink-500 transition-all hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button">

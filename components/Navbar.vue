@@ -76,7 +76,7 @@
         enter-from-class="opacity-0 transform -translate-y-2" enter-to-class="opacity-100 transform translate-y-0"
         leave-active-class="transition ease-in duration-200" leave-from-class="opacity-100 transform translate-y-0"
         leave-to-class="opacity-0 transform -translate-y-2">
-        <div v-show="navbarPanelOpen" class="w-full">
+        <div v-show="navbarPanelOpen" class="w-full sm:hidden">
           <div class="flex flex-col">
             <NuxtLink to="/" :class="[
               'rounded-md px-3 py-2 text-sm font-medium',

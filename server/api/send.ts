@@ -6,8 +6,6 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Define the event handler for sending emails
 export default defineEventHandler(async (event) => {
-
-  
   try {
     const body = await readBody(event);
     const { email, message, name } = body;
