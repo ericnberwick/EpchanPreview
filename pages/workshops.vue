@@ -9,7 +9,8 @@
     </div>
 
     <div class="w-full h-56 overflow-hidden ">
-      <img src="public/img/workshop.jpg" class="w-full h-full object-cover" style="object-position: center bottom;">
+      <NuxtImg src="/img/workshop.jpg" class="w-full h-full object-cover" style="object-position: center bottom;">
+      </NuxtImg>
     </div>
 
     <div class="mt-24">

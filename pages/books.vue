@@ -11,7 +11,8 @@
       </div>
 
       <div class="w-full h-56 overflow-hidden mb-8">
-        <img src="public/img/booksbanner.jpg" class="w-full h-full object-cover" style="object-position: center ">
+        <NuxtImg src="img/booksbanner.jpg" class="w-full h-full object-cover" style="object-position: center ">
+        </NuxtImg>
       </div>
 
     </div>
