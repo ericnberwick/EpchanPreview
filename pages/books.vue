@@ -1,31 +1,38 @@
 <template>
   <div class="">
     <Navbar page="books" />
-    <div class="px-8 py-24 ">
-      <div class="container mx-auto text-center ">
-        <h2
-          class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-blue-gray-900 mb-4">
+    <div class="px-8 py-24 bg-gray-800 text-white">
+      <div class="container mx-auto text-center text-white">
+        <h2 class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-white mb-4">
           Books</h2>
         <p class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500">
         </p>
       </div>
 
-      <div class="w-full h-56 overflow-hidden mb-8">
+      <div class="w-full h-56 overflow-hidden mb-8 bg-gray-800">
         <NuxtImg src="img/booksbanner.jpg" class="w-full h-full object-cover" style="object-position: center ">
         </NuxtImg>
       </div>
 
     </div>
 
-    <div class=" w-screen flex justify-center px-10">
-      <div class=" grid gap-8 grid-cols-1 sm:grid-cols-2 ">
+    <div class=" w-full flex justify-center px-10 bg-gray-800 text-white">
+      <div class=" grid gap-8 grid-cols-1 sm:grid-cols-2 text-white">
         <div v-for="review in reviews" :key="review.sys.id">
           <BookCard :review="review" class="w-full" />
         </div>
       </div>
+
     </div>
 
   </div>
+
+  <div class="bg-gray-800 pt-20">
+    <Footer></Footer>
+  </div>
+
+
+
 </template>
 
 

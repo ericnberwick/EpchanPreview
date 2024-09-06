@@ -1,5 +1,5 @@
 <template>
-  <div class="card card h-full flex justify-center w-full border-2 border-grey-800">
+  <div class="card card h-full flex justify-center w-full border-2 border-gray-800">
     <div class="card__content relative transition-transform duration-1000 ">
       <div class="container grid  gap-8 pr-2">
         <div
@@ -11,7 +11,7 @@
                 alt="Revolutionizing Our Production Process" class="object-cover w-full " />
             </a>
           </div>
-          <div class="p-6 px-2 sm:pr-6 sm:pl-4">
+          <div class="p-6 px-2 sm:pr-6 sm:pl-4 text-white">
 
             <a href="#"
               class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-blue-gray-900 mb-2 normal-case transition-colors hover:text-gray-700">{{
@@ -25,8 +25,9 @@
         </div>
       </div>
 
-      <div class="card__back absolute top-0 left-0 h-full w-full bg-white flex items-center justify-center ">
-        <div class=" w-full h-full p-2">
+      <div
+        class="card__back absolute top-0 left-0 h-full w-full bg-white flex items-center justify-center bg-gray-800 ">
+        <div class=" w-full h-full p-2 bg-gray-800">
           <h2 v-if="praiseExists">Praise</h2>
           <RichTextRenderer v-if="praiseExists" class="block  font-sans text-black text-sm"
             :document="review.fields.praise" />

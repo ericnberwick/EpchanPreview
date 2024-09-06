@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white text-gray-600 work-sans leading-normal text-base tracking-normal">
+  <div class="bg-gray-800 text-gray-600 work-sans leading-normal text-base tracking-normal">
 
     <!--Nav-->
     <Navbar page="home" />
@@ -81,17 +81,18 @@
       </div>
     </div>
 
-    <section class="bg-white py-8">
+    <section class="bg-gray-800 py-8">
 
       <div class="container py-8 px-6 mx-auto">
 
-        <a class="tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl mb-8" href="#">
+        <a class="tracking-wide no-underline hover:no-underline font-bold text-white text-xl mb-8" href="#">
           Welcome
         </a>
 
 
         <!-- <RichTextRenderer :document="welcome[0].fields?.welcomeText" class="mt-8 mb-8"/> -->
-        <p>Dr. Ernest P. Chan, is an expert in machine learning and the application of quantitative models for asset
+        <p class="text-white">Dr. Ernest P. Chan, is an expert in machine learning and the application of quantitative
+          models for asset
           management. He founded and serves as non-executive chairman of a hedge fund and SMAs at <a
             class="text-blue-600 hover:text-blue-800 underline hover:no-underline font-medium transition duration-300 ease-in-out"
             href="https://qtscm.com/">QTS Capital
@@ -109,7 +110,7 @@
 
     </section>
 
-    <section class="bg-white py-8">
+    <section class="bg-gray-800 py-8">
 
       <div class="container mx-auto flex items-center flex-wrap pt-4 pb-12">
 

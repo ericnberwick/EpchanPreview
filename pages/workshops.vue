@@ -1,9 +1,8 @@
 <template>
   <Navbar page="workshops" />
-  <section class="px-8 py-24">
+  <section class="px-8 py-24 bg-gray-800">
     <div class="container mx-auto text-center">
-      <h2
-        class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-blue-gray-900 mb-4">
+      <h2 class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-white mb-4">
         Workshops</h2>
       <p class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500"></p>
     </div>
@@ -20,6 +19,7 @@
         </div>
       </div>
     </div>
+    <Footer class="mt-40"></Footer>
   </section>
 </template>
 

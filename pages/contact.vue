@@ -1,29 +1,28 @@
 <template>
   <Navbar page="email" />
-  <div class="px-8 py-24 ">
+  <div class="px-8 py-24 bg-gray-800">
     <div class="container mx-auto text-center ">
-      <h2
-        class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-blue-gray-900 mb-4">
+      <h2 class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-white mb-4">
         Contact</h2>
       <p class="block antialiased font-sans text-base leading-relaxed text-inherit mb-4 font-normal !text-gray-500">
         Send a message below</p>
     </div>
 
     <div class="space-x-2 max-w-md mx-auto my-auto mt-5 border border-border px-6 py-12  rounded-lg">
-      <div class="mb-4">
-        <label for="email" class="block text-black text-sm font-bold mb-2">Your Name</label>
+      <div class="mb-4 ml-2">
+        <label for="email" class="block text-white text-sm font-bold mb-2">Your Name</label>
         <input v-model="name" type="email" id="email" name="email" placeholder="John Smith" required
           class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500  text-grey">
       </div>
 
       <div class="mb-4">
-        <label for="email" class="block text-black text-sm font-bold mb-2">Your Email</label>
+        <label for="email" class="block text-white text-sm font-bold mb-2">Your Email</label>
         <input v-model="email" type="email" id="email" name="email" placeholder="john@example.com" required
           class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500  text-grey">
       </div>
 
       <div class="mb-6">
-        <label for="message" class="block text-black text-sm font-bold mb-2">Your Message</label>
+        <label for="message" class="block text-white text-sm font-bold mb-2">Your Message</label>
         <textarea id="message" name="message" rows="4" placeholder="How can we help you?" v-model="message" required
           class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500  text-grey"></textarea>
       </div>
@@ -34,8 +33,8 @@
       </button>
 
       <transition name="fade">
-        <div v-show="sentMessage"
-          class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
+        <div v-show="sentMessage" class=" border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md"
+          role="alert">
           <div class="flex">
             <div class="py-1">
               <svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg"
@@ -51,12 +50,14 @@
         </div>
       </transition>
     </div>
+    <Footer class="mt-20"></Footer>
   </div>
 </template>
 
 <script setup lang="ts">
 import { useFetch } from 'nuxt/app';
 import { ref } from 'vue';
+import Footer from '../components/Footer.vue';
 
 const sentMessage = ref<Boolean>(false);
 const email = ref<string>('');
