@@ -1,22 +1,23 @@
 <template>
-    <footer class="container mx-auto bg-white py-8 border-t border-gray-400">
+    <footer class="container mx-auto bg-gray-800 py-8 border-t border-gray-400">
         <div class="container flex px-3 py-8 ">
             <div class="w-full mx-auto flex flex-wrap">
                 <div class="flex w-full lg:w-1/2 ">
                     <div class="px-3 md:px-0">
                         <!-- <h3 class="font-bold text-gray-900">About</h3> -->
-                        <p class="py-4">
+                        <p class="py-4 text-white">
                             2022 . E.P. Chan & Associates
                         </p>
                     </div>
                 </div>
                 <div class="flex w-full lg:w-1/2 lg:justify-end lg:text-right mt-6 md:mt-0">
-                    <div class="px-3 md:px-0 mr-4" >
+                    <div class="px-3 md:px-0 mr-4">
                         <!-- <h3 class="text-left font-bold text-gray-900">Social</h3> -->
 
                         <div class="w-full flex items-center py-4 mt-0">
-                            
-                            <a href="https://www.linkedin.com/in/epchan/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=ca" class="mx-2">
+
+                            <a href="https://www.linkedin.com/in/epchan/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=ca"
+                                class="mx-2">
                                 <img class="w-32 fill-current" src="public/img/LinkedIn_2021.svg">
                             </a>
                             <!-- <a href="#" class="mx-2">

@@ -1,10 +1,9 @@
 <template>
-  <div class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md border border-blue-gray-100 transition-all duration-300 ease-in-out
+  <div class="relative flex flex-col bg-clip-border rounded-xl bg-gray-800 text-white shadow-md border border-blue-gray-100 transition-all duration-300 ease-in-out
              hover:border-green-500 hover:shadow-lg">
     <div
-      class="relative bg-clip-border mt-4 mx-4 rounded-xl overflow-hidden bg-transparent text-gray-700 shadow-none !m-0 p-6">
-      <h5
-        class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-blue-gray-900 capitalize">
+      class="relative bg-clip-border mt-4 mx-4 rounded-xl overflow-hidden bg-transparent text-white shadow-none !m-0 p-6">
+      <h5 class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-white capitalize">
         {{ course.fields.courseName }}</h5>
       <RichTextRenderer
         class="block antialiased font-sans text-sm leading-normal text-inherit font-normal !text-gray-500"
@@ -18,11 +17,10 @@
     <div class="p-6 border-t border-blue-gray-50">
       <ul class="flex flex-col gap-3" v-for="item in course.fields.whatsIncluded.content[0].content">
         <li class="flex items-center gap-3 text-gray-700"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
-            class="h-4 w-4 text-blue-gray-900">
+            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-white">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
           </svg>
-          <p class="block antialiased font-sans text-sm leading-normal font-normal text-inherit">
+          <p class="block antialiased text-white font-sans text-sm leading-normal font-normal text-inherit">
             {{ item.content[0].content[0].value }}</p>
         </li>
 

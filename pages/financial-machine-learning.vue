@@ -3,10 +3,9 @@
     <Navbar page="financial-machine-learning" />
 
 
-    <div class="px-8 py-24">
+    <div class="px-8 py-24 bg-gray-800">
       <div class="container mx-auto text-center">
-        <h2
-          class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-blue-gray-900 mb-4">
+        <h2 class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-white mb-4">
           Financial Machine Learning</h2>
         <p class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500">
         </p>
@@ -17,14 +16,17 @@
           style="object-position: center bottom;"></NuxtImg>
       </div>
 
-      <div class="w-full ">
+      <div class="w-full text-white">
         <div class=" " v-for="paragraph in sortedParagraphs">
-          <h2 v-if="paragraph.fields.title != 'notitle'" class="font-bold my-4 text-xl">{{ paragraph.fields.title }}
+          <h2 v-if="paragraph.fields.title != 'notitle'" class="font-bold my-4 text-xl text-white">{{
+            paragraph.fields.title }}
           </h2>
           <RichTextRenderer
-            class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500"
+            class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal text-white"
             :document="paragraph.fields.body" />
         </div>
+        <Footer class="mt-40"></Footer>
+
       </div>
 
 
