@@ -19,7 +19,7 @@
           </div>
         </div>
         <div class="col-span-2 col-start-5 flex justify-center ">
-          <Timeline class="mr-10 mt-10"></Timeline>
+          <Timeline class="ml-6 mr-10 mt-10"></Timeline>
         </div>
 
 
@@ -44,7 +44,6 @@
 import { ref, onMounted } from "vue";
 import { useRuntimeConfig } from '#imports';
 import Timeline from "../components/Timeline.vue";
-import EducationCard from "../components/EducationCard.vue";
 
 const config = useRuntimeConfig();
 const profiles = ref([]);
