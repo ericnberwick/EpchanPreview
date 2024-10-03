@@ -1,36 +1,34 @@
 <template>
-  <div class="bg-gray-800">
+  <div class="bg-gray-800 w-screen h-screen">
     <Navbar page="about" />
-
-    <div class="px-8 pt-24  ">
-      <div class="container mx-auto text-center ">
-        <h2 class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-white mb-4">
-          About</h2>
-        <p class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500">
-        </p>
+    <div class="bg-gray-800">
+      <div class="px-8 pt-24  ">
+        <div class="container mx-auto text-center ">
+          <h2 class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-white mb-4">
+            About</h2>
+          <p class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500">
+          </p>
+        </div>
       </div>
 
+      <div class="" v-for="profile in profiles" :key="profile.sys.id">
+        <AboutCard :about="profile"></AboutCard>
+      </div>
+      <div class="mt-72">
+        <Footer></Footer>
+      </div>
     </div>
-    <div class="" v-for="profile in profiles" :key="profile.sys.id">
-      <AboutCard :about="profile"></AboutCard>
-    </div>
-  </div>
-  <div class="w-full bg-gray-800 pt-20">
-    <Footer></Footer>
+
+
+
   </div>
 
 
 </template>
 
-
-
 <script setup>
 import { ref, onMounted } from "vue";
-
-const profile1 = {
-  name: "Ernie P Chanie",
-  description: "Suuuuu"
-}
+import { useRuntimeConfig } from '#imports';
 
 const config = useRuntimeConfig();
 const profiles = ref([]);
@@ -38,6 +36,10 @@ const spaceName = config.public.CONTENTFUL_SPACE_ID;
 const accessTokenName = config.public.CONTENTFUL_ACCESS_KEY;
 
 let client;
+
+onMounted(() => {
+  fetchEntries();
+});
 
 async function fetchEntries() {
   const contentful = await import("contentful");
@@ -50,11 +52,5 @@ async function fetchEntries() {
     content_type: "aboutProfile", // Ensure this matches the actual ID in Contentful
   });
   profiles.value = res.items;
-  console.log("res: ", res);
 }
-
-//Fetch data on component mount
-onMounted(() => {
-  fetchEntries();
-});
 </script>

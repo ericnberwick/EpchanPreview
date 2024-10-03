@@ -1,54 +1,54 @@
 <template>
-  <div class="card card h-full flex justify-center w-full border-2 border-gray-800">
+  <div class=" flex justify-center w-full  hover:border-green-500 transition duration-300 ease-out">
     <div class="card__content relative transition-transform duration-1000 ">
-      <div class="container grid  gap-8 pr-2">
+      <div class="container grid  gap-2 pr-2">
         <div
-          class="relative flex-col bg-clip-border rounded-xl bg-transparent text-gray-700 shadow-none grid gap-2 item sm:grid-cols-2">
-          <div class="relative bg-clip-border rounded-xl overflow-hidden bg-white text-gray-700 shadow-lg m-0">
+          class="relative flex-col bg-clip-border rounded-xl bg-transparent text-gray-700 shadow-none grid gap-2 item grid-cols-3 border-2 border-green-900">
+          <div class=" relative bg-clip-border text-gray-700 m-0 overflow-hidden">
 
-            <a :href="review.fields.linkToBook">
-              <img :src="'https:' + review.fields.bookImage.fields.file.url"
-                alt="Revolutionizing Our Production Process" class="object-cover w-full " />
+            <a :href="review.fields.linkToBook" class="">
+              <div class="relative  w-fit overflow-hidden">
+                <img :src="'https:' + review.fields.bookImage.fields.file.url"
+                  alt="Revolutionizing Our Production Process" width="400px"
+                  class="transition-transform duration-500 ease-in-out transform scale-105 hover:scale-110">
+                <span v-if="review.fields.new == true"
+                  class="absolute bg-green-600 text-center text-white font-semibold py-1 w-full md:w-[190px] transform md:rotate-45 top-0 md:top-[32px] right-0 md:right-[-40px]">
+                  New
+                </span>
+              </div>
             </a>
-          </div>
-          <div class="p-6 px-2 sm:pr-6 sm:pl-4 text-white">
 
-            <a href="#"
-              class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-blue-gray-900 mb-2 normal-case transition-colors hover:text-gray-700">{{
+          </div>
+
+          <div class="p-6 px-2 sm:pr-6 sm:pl-4 text-white p-6 px-2 sm:pr-6 sm:pl-4 text-white col-start-2 col-span-2">
+            <a :href="review.fields.linkToBook"
+              class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-blue-gray-900 mb-2 normal-case transition-colors hover:text-green-500">{{
                 review.fields.title }}</a>
             <RichTextRenderer
-              class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500"
+              class="block antialiased font-sans text-base leading-relaxed text-inherit font-normal !text-gray-500"
               :document="review.fields.description" />
 
-          </div>
+            <div class="mt-2" v-if="review.fields.praise">
+              <h2
+                class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug  mb-2 normal-case ">
+                Praise</h2>
+              <RichTextRenderer
+                class="mt-8 block antialiased font-sans text-base leading-relaxed text-inherit font-normal !text-gray-500"
+                :document="review.fields.praise" />
+            </div>
 
-        </div>
-      </div>
 
-      <div
-        class="card__back absolute top-0 left-0 h-full w-full bg-white flex items-center justify-center bg-gray-800 ">
-        <div class=" w-full h-full p-2 bg-gray-800">
-          <h2 v-if="praiseExists">Praise</h2>
-          <RichTextRenderer v-if="praiseExists" class="block  font-sans text-black text-sm"
-            :document="review.fields.praise" />
-          <div class="mt-5 w-full flex justify-center">
-            <a :href="review.fields.linkToBook" class="w-full">
+            <a :href="review.fields.linkToBook">
               <button
                 class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-2 px-4 rounded-lg border border-green-500 text-green-500 hover:opacity-75 focus:ring focus:ring-green-200 active:opacity-[0.85] block w-full mt-6"
-                type="button">buy now</button>
-            </a>
+                type="button">buy now</button></a>
+
           </div>
         </div>
-
       </div>
-
     </div>
-
-
   </div>
-
 </template>
-
 
 <script setup>
 import { defineProps, onMounted, ref } from 'vue'
@@ -64,6 +64,7 @@ const props = defineProps({
 const praiseExists = ref(false);
 
 onMounted(() => {
+  console.log("yoo : ", props.review.fields.new)
   if (props.review.fields.praise) {
     praiseExists.value = true;
   } else {
@@ -106,5 +107,9 @@ h2 {
 
 .card__back {
   transform: rotateY(.5turn);
+}
+
+.rotate135 {
+  transform: rotate(135deg);
 }
 </style>

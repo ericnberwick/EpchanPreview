@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="bg-gray-800 w-screen h-screen">
     <Navbar page="investment-management" />
 
     <div class="px-8 py-24 bg-gray-800 text-white">
@@ -11,10 +11,9 @@
       </div>
 
       <div class="w-full h-56 overflow-hidden mb-8">
-        <NuxtImg src="img/investment-management.jpg" class="w-full h-full object-cover"
+        <NuxtImg src="img/investment-management.jpg" class="w-full h-full object-cover rounded-xl"
           style="object-position: center bottom;"></NuxtImg>
       </div>
-
 
       <div class="2xl:container 2xl:mx-auto ">
         <div class="lg:w-10/12 w-full">
@@ -24,14 +23,12 @@
             its service.</p>
         </div>
 
-
-
         <div class="lg:mt-16 sm:mt-12 mt-16 flex lg:flex-row justify-between flex-col lg:gap-8 gap-12 mb-20">
           <div class="w-full xl:w-5/12 lg:w-6/12">
             <h2 class="font-bold lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 dark:text-white">About QTS
             </h2>
-            <p class="font-normal text-base leading-6 text-white mt-4">Founded in 2011 by quant hedge
-              fund manager and quant finance author Dr. Ernest Chan, QTS Capital Managment LLC is a global
+            <p class="font-normal text-base leading-6 text-white mt-4">Founded in 2011 by Dr. Ernest Chan, QTS Capital
+              Managment LLC is a global
               multi-strategy investment management firm.</p>
             <p class="font-normal text-base leading-6 text-white mt-6">Led by a team of
               Mathematicians and Physicists QTS has developed a proprietary quantitative approach to strategy
@@ -40,52 +37,13 @@
           </div>
           <div class="flex items-center w-full ">
             <NuxtImg class=" w-1/2" src="/img/qts.png"></NuxtImg>
-
           </div>
         </div>
       </div>
       <Footer></Footer>
     </div>
-
-
-
-
   </div>
 </template>
 
-
-
 <script setup>
-import { ref, onMounted } from "vue";
-
-const profile1 = {
-  name: "Ernie P Chanie",
-  description: "Suuuuu"
-}
-
-const config = useRuntimeConfig();
-const profiles = ref([]);
-const spaceName = config.public.CONTENTFUL_SPACE_ID;
-const accessTokenName = config.public.CONTENTFUL_ACCESS_KEY;
-
-let client;
-
-async function fetchEntries() {
-  const contentful = await import("contentful");
-  client = contentful.createClient({
-    space: spaceName,
-    accessToken: accessTokenName,
-  });
-
-  const res = await client.getEntries({
-    content_type: "aboutProfile", // Ensure this matches the actual ID in Contentful
-  });
-  profiles.value = res.items;
-  console.log("res: ", res);
-}
-
-//Fetch data on component mount
-onMounted(() => {
-  fetchEntries();
-});
 </script>

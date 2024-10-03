@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="w-screen h-screen bg-gray-800">
     <Navbar page="financial-machine-learning" />
 
 
@@ -17,7 +17,7 @@
       </div>
 
       <div class="w-full text-white">
-        <div class=" " v-for="paragraph in sortedParagraphs">
+        <div v-for="paragraph in sortedParagraphs" :key="paragraph.sys.id">
           <h2 v-if="paragraph.fields.title != 'notitle'" class="font-bold my-4 text-xl text-white">{{
             paragraph.fields.title }}
           </h2>
@@ -44,7 +44,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import RichTextRenderer from 'contentful-rich-text-vue-renderer';
-import { Entry } from "contentful";
+import { useRuntimeConfig } from '#imports';
 
 var sortedParagraphs = ref([]);
 

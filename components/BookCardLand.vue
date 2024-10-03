@@ -1,20 +1,23 @@
 <template>
-  <div class="container grid gap-8">
-    <div
-      class="p-1 relative flex-col bg-clip-border border-white rounded-lg bg-transparent text-gray-700 shadow-none grid gap-2 sm:grid-cols-2 border-2 border-black">
-      <div class="relative bg-clip-border overflow-hidden bg-white shadow-lg m-0">
-        <a :href="review.fields.linkToBook">
-          <img :src="'https:' + review.fields.bookImage.fields.file.url" class="object-cover w-full" />
+  <div class="">
+    <div class="border-white border-2 hover:border-pink-500 rounded-lg text-gray-700 grid grid-cols-2 transition-all">
+      <div class="flex h-full p-2">
+        <a :href="review.fields.linkToBook" class="flex">
+          <img :src="'https:' + review.fields.bookImage.fields.file.url" class="object-cover h-[400px] w-auto"
+            alt="Book cover" />
         </a>
       </div>
-      <div class="p-6 px-2 sm:pr-6 sm:pl-4 text-white">
+
+      <div class=" p-6 px-2 sm:pr-6 sm:pl-4 text-white flex flex-col h-[400px] overflow-hidden">
         <a :href="review.fields.linkToBook"
           class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-white mb-2 normal-case transition-colors hover:text-blue-700">
           {{ review.fields.title }}
         </a>
-        <RichTextRenderer class="block antialiased font-sans text-base leading-relaxed mb-8 font-normal text-white"
-          :document="review.fields.description" />
-        <a class="inline-block" :href="review.fields.linkToBook">
+        <div class="flex-grow overflow-y-auto">
+          <RichTextRenderer class="block antialiased font-sans text-base leading-relaxed mb-8 font-normal text-white"
+            :document="review.fields.description" />
+        </div>
+        <a class="inline-block mt-auto" :href="review.fields.linkToBook">
           <button
             class="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-pink-500 transition-all hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button">
@@ -35,7 +38,7 @@
 import { defineProps } from 'vue'
 import RichTextRenderer from 'contentful-rich-text-vue-renderer';
 
-const props = defineProps({
+defineProps({
   review: {
     type: Object,
     required: true

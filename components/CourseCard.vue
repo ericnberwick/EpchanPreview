@@ -15,7 +15,8 @@
       </h3>
     </div>
     <div class="p-6 border-t border-blue-gray-50">
-      <ul class="flex flex-col gap-3" v-for="item in course.fields.whatsIncluded.content[0].content">
+      <ul class="flex flex-col gap-3" v-for="(item, index) in course.fields.whatsIncluded.content[0].content"
+        :key="index">
         <li class="flex items-center gap-3 text-gray-700"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
             viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-white">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
@@ -38,7 +39,7 @@
 import { defineProps } from 'vue'
 import RichTextRenderer from 'contentful-rich-text-vue-renderer';
 
-const props = defineProps({
+defineProps({
   course: {
     type: Object,
     required: true
