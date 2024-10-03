@@ -15,35 +15,99 @@
           style="object-position: center bottom;"></NuxtImg>
       </div>
 
-      <div class="2xl:container 2xl:mx-auto ">
-        <div class="lg:w-10/12 w-full">
-          <p class="font-normal text-base leading-6 text-white mt-6">Dr. Chan is the founder of QTS
-            Capital Management, LLC., a commodity pool operator and commodity trading advisor. QTS manages a commodity
-            pool (hedge fund) as well as individual brokerage accounts. Please visit www.qtscm.com for an overview of
-            its service.</p>
+      <div class="">
+        <div class="grid grid-cols-5 gap-4">
+
+          <div class="col-span-2 flex items-center justify-center">
+            <!-- <img src="public/img/qts-logo.png" width="500px"> -->
+            <div class=" m-4 grid grid-cols-1">
+              <h2 class=" font-bold sm:text-6xl">QTS</h2>
+              <h2 class=" font-bold sm:text-6xl">Capital</h2>
+              <h2 class=" font-bold sm:text-6xl">Management</h2>
+              <h3 class="mt-4 text-lg font-medium text-gray-300 ">QTS Capital Management is a quantitative trading firm
+                that uses advanced mathematical models and computer algorithms to analyze financial markets and execute
+                automated trading strategies across various asset classes.</h3>
+              <div class="mt-4">
+                <a class="inline-flex items-center gap-2 rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-indigo-800 transition-all hover:text-gray-100 focus:outline-none focus:ring active:text-indigo-500"
+                  href="https://qtscm.com/">
+                  <span class="text-sm font-medium"> Find out more </span>
+
+                  <svg class="size-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-span-2 col-start-4">
+            <img src="public/img/qts.png" width="600">
+          </div>
+
         </div>
 
-        <div class="lg:mt-16 sm:mt-12 mt-16 flex lg:flex-row justify-between flex-col lg:gap-8 gap-12 mb-20">
-          <div class="w-full xl:w-5/12 lg:w-6/12">
-            <h2 class="font-bold lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 dark:text-white">About QTS
-            </h2>
-            <p class="font-normal text-base leading-6 text-white mt-4">Founded in 2011 by Dr. Ernest Chan, QTS Capital
-              Managment LLC is a global
-              multi-strategy investment management firm.</p>
-            <p class="font-normal text-base leading-6 text-white mt-6">Led by a team of
-              Mathematicians and Physicists QTS has developed a proprietary quantitative approach to strategy
-              development and selection with a strong emphasis on uncorrelated risk-adjusted returns and risk
+        <div class="mt-16 grid grid-cols-3">
+          <div>
+            <div class="flex items-center">
+              <img src="public/img/calender.svg" width="16px" class="m-4 ">
+              <h2 class="text-4xl font-bold">Founded in 2011</h2>
+            </div>
+
+            <p class="m-4 text-lg font-medium text-gray-300 ">Founded in 2011 by quant hedge fund manager and quant
+              finance author Dr. Ernest Chan, QTS Capital Managment LLC is a global multi-strategy investment management
+              firm.</p>
+          </div>
+          <div>
+            <div class="flex items-center">
+              <img src="public/img/chart-line.svg" width="16px" class="m-4 ">
+              <h2 class="text-4xl font-bold">Data Driven</h2>
+            </div>
+
+            <p class="m-4 text-lg font-medium text-gray-300 ">Led by a team of Mathematicians and Physicists QTS has
+              developed a proprietary quantitative approach to
+              strategy development and selection with a strong emphasis on uncorrelated risk-adjusted returns and risk
               mitigation. </p>
           </div>
-          <div class="flex items-center w-full ">
-            <NuxtImg class=" w-1/2" src="/img/qts.png"></NuxtImg>
+          <div>
+            <div class="flex items-center">
+              <img src="public/img/fa-book.svg" width="16px" class="m-4 ">
+              <h2 class="text-4xl font-bold">Programs</h2>
+            </div>
+
+            <p class="m-4 text-lg font-medium text-gray-300 ">QTS Capital Management LLC manages a Commodity Pool as
+              well as individual clients’ accounts using quantitative strategies. It is a member of the National Futures
+              Association and is registered as a Commodity Pool Operator and Commodity Trading Advisor (NFA ID:
+              0431162). Since 2011, it has served a global clientele spanning 4 continents. </p>
           </div>
+
         </div>
+
+        <div class="mt-16 grid grid-cols-1">
+          <div class="flex justify-center">
+            <h2 class="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+              Investor Reviews
+            </h2>
+          </div>
+
+          <InvestorManagementReview></InvestorManagementReview>
+
+        </div>
+
       </div>
-      <Footer></Footer>
+
+
+
+
     </div>
+    <Footer></Footer>
   </div>
 </template>
 
 <script setup>
+import InvestorManagementReview from '../components/Investor-Management-Review.vue';
+
 </script>
