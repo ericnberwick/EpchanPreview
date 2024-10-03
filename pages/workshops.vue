@@ -18,19 +18,24 @@
       <LoadingCard v-if="isLoading"></LoadingCard>
 
       <Transition name="fade">
-        <div v-if="!isLoading" class="mt-24">
-          <div class="grid gap-8 grid-cols-1 grid-cols-1 ">
+        <div v-if="!isLoading" class="mt-24 mx-8">
+          <div class="grid gap-8 grid-cols-3 grid-cols-1 ">
             <div v-for="course in courses" :key="course.sys.id">
               <CourseCard :course="course" class="border-4-border-red-900" />
             </div>
 
-            <BonusCourseCard></BonusCourseCard>
+
           </div>
+          <BonusCourseCard class="mt-10 border border-gray-100"></BonusCourseCard>
         </div>
       </Transition>
 
+      <div class="mt-10">
+        <Review></Review>
+      </div>
 
-      <div class="mt-8 flex justify-center">
+
+      <!-- <div class="mt-8 flex justify-center">
         <div class=" w-1/2  flex flex-col">
           <div class=" flex justify-center mt-6">
             <h2 class="text-white">Praise for our workshops</h2>
@@ -101,7 +106,7 @@
             <p class="text-white"><i>“Dr. Chan … is a phenomenal instructor…”</i> – Anonymous student evaluation</p>
           </div>
         </div>
-      </div>
+      </div> -->
       <Footer class="mt-20"></Footer>
     </section>
   </div>

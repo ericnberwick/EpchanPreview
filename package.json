@@ -16,6 +16,7 @@
     "contentful": "^10.12.4",
     "contentful-rich-text-vue-renderer": "^3.1.0",
     "dotenv": "^16.4.5",
+    "keen-slider": "^6.8.6",
     "nuxt": "^3.12.2",
     "resend": "^4.0.0",
     "vue": "latest"

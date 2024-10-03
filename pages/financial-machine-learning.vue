@@ -17,13 +17,16 @@
       </div>
 
       <div class="w-full text-white">
-        <div v-for="paragraph in sortedParagraphs" :key="paragraph.sys.id">
-          <h2 v-if="paragraph.fields.title != 'notitle'" class="font-bold my-4 text-xl text-white">{{
+        <div class="rounded-xl border border-gray-700 bg-gray-800 px-8 py-4">
+          <div v-for="paragraph in sortedParagraphs" :key="paragraph.sys.id">
+            <ParagraphCard :paragraph="paragraph"></ParagraphCard>
+            <!-- <h2 v-if="paragraph.fields.title != 'notitle'" class="font-bold my-4 text-xl text-white">{{
             paragraph.fields.title }}
           </h2>
           <RichTextRenderer
             class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal text-white"
-            :document="paragraph.fields.body" />
+            :document="paragraph.fields.body" /> -->
+          </div>
         </div>
         <Footer class="mt-40"></Footer>
 

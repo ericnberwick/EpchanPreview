@@ -1,5 +1,5 @@
 <template>
-    <div class="relative flex flex-col  rounded-xl bg-gray-800 text-white  border border-purple-500 transition-all duration-300 ease-in-out
+    <div class="relative flex flex-col  rounded-xl bg-gray-800 text-white   transition-all duration-300 ease-in-out
                hover:border-green-500 hover:shadow-lg grid grid-cols-2 p-4">
         <div class="flex justify-center h-full">
             <div class="text-center max-w-2xl">
