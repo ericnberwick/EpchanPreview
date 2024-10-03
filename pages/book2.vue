@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen h-screen bg-gray-800">
+  <div class=" h-screen bg-gray-800">
     <Navbar></Navbar>
     <div class="flex justify-center bg-gray-800">
       <div class="w-10/12 ">

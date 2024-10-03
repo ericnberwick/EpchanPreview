@@ -4,7 +4,7 @@
       <div class="container grid  gap-2 pr-2">
         <div
           class="relative flex-col bg-clip-border rounded-xl bg-transparent text-gray-700 shadow-none grid gap-2 item grid-cols-3 border-2 border-green-900">
-          <div class=" relative bg-clip-border text-gray-700 m-0 overflow-hidden">
+          <div class=" relative bg-clip-border text-gray-700 m-0 overflow-hidden flex items-center justify-center">
 
             <a :href="review.fields.linkToBook" class="">
               <div class="relative  w-fit overflow-hidden">

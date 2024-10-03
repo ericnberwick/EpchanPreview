@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen h-screen bg-gray-800">
+  <div class="h-screen bg-gray-800">
     <Navbar page="workshops" />
     <section class="px-8 py-24 bg-gray-800">
       <div class="container mx-auto text-center">
@@ -15,7 +15,7 @@
         </NuxtImg>
       </div>
 
-      <LoadingCard v-if="isLoading"></LoadingCard>
+      <LoadingCard v-if="isLoading" message="Loading workshops..."></LoadingCard>
 
       <Transition name="fade">
         <div v-if="!isLoading" class="mt-24 mx-8">

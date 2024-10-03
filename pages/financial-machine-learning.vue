@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen h-screen bg-gray-800">
+  <div class="h-screen bg-gray-800">
     <Navbar page="financial-machine-learning" />
 
 
@@ -15,28 +15,29 @@
         <NuxtImg src="img/finance-banner.jpg" class="w-full h-full object-cover"
           style="object-position: center bottom;"></NuxtImg>
       </div>
-
-      <div class="w-full text-white">
-        <div class="rounded-xl border border-gray-700 bg-gray-800 px-8 py-4">
-          <div v-for="paragraph in sortedParagraphs" :key="paragraph.sys.id">
-            <ParagraphCard :paragraph="paragraph"></ParagraphCard>
-            <!-- <h2 v-if="paragraph.fields.title != 'notitle'" class="font-bold my-4 text-xl text-white">{{
+      <Transition name="fade">
+        <div v-if="!isLoading" class="w - full text - white">
+          <div class="rounded-xl border border-gray-700 bg-gray-800 px-8 py-4">
+            <div v-for="paragraph in sortedParagraphs" :key="paragraph.sys.id">
+              <ParagraphCard :paragraph="paragraph"></ParagraphCard>
+              <!-- <h2 v-if="paragraph.fields.title != 'notitle'" class="font-bold my-4 text-xl text-white">{{
             paragraph.fields.title }}
           </h2>
           <RichTextRenderer
             class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal text-white"
             :document="paragraph.fields.body" /> -->
+            </div>
           </div>
+          <Footer class="mt-40"></Footer>
+
         </div>
-        <Footer class="mt-40"></Footer>
+      </Transition>
 
-      </div>
-
-
-
+      <LoadingCard v-if="isLoading" message="Loading content..."></LoadingCard>
 
 
     </div>
+
 
 
 
@@ -50,6 +51,7 @@ import RichTextRenderer from 'contentful-rich-text-vue-renderer';
 import { useRuntimeConfig } from '#imports';
 
 var sortedParagraphs = ref([]);
+const isLoading = ref(true);
 
 const config = useRuntimeConfig();
 // Define a ref to hold fetched data
@@ -84,5 +86,7 @@ async function fetchEntries() {
 // Fetch data on component mount
 onMounted(() => {
   fetchEntries();
+  isLoading.value = false
+
 });
 </script>

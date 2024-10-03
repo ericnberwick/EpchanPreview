@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-800 w-screen h-screen">
+  <div class="bg-gray-800  h-screen">
     <Navbar page="about" />
     <div class="bg-gray-800">
       <div class="px-8 pt-24  ">
@@ -12,12 +12,17 @@
       </div>
 
       <div class=" grid grid-cols-6 gap-4">
-
-        <div class="col-span-4 ">
-          <div v-for="profile in profiles" :key="profile.sys.id">
-            <AboutCard :about="profile"></AboutCard>
+        <Transition name="fade">
+          <div class="col-span-4 " v-if="!isLoading">
+            <div v-for="profile in profiles" :key="profile.sys.id">
+              <AboutCard :about="profile"></AboutCard>
+            </div>
           </div>
+        </Transition>
+        <div class="col-span-4 " v-if="isLoading">
+          <LoadingCard v-if="isLoading" message="Loading content..."></LoadingCard>
         </div>
+
         <div class="col-span-2 col-start-5 flex justify-center ">
           <Timeline class="ml-6 mr-10 mt-10"></Timeline>
         </div>
@@ -49,11 +54,12 @@ const config = useRuntimeConfig();
 const profiles = ref([]);
 const spaceName = config.public.CONTENTFUL_SPACE_ID;
 const accessTokenName = config.public.CONTENTFUL_ACCESS_KEY;
-
+const isLoading = ref(true);
 let client;
 
 onMounted(() => {
   fetchEntries();
+  isLoading.value = false
 });
 
 async function fetchEntries() {
