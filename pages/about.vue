@@ -3,7 +3,7 @@
     <Navbar page="about" />
     <div class="bg-gray-800">
       <div class="px-8 pt-24  ">
-        <div class="container mx-auto text-center ">
+        <div class="container mx-auto text-center">
           <h2 class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-white mb-4">
             About</h2>
           <p class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500">
@@ -11,9 +11,23 @@
         </div>
       </div>
 
-      <div class="" v-for="profile in profiles" :key="profile.sys.id">
-        <AboutCard :about="profile"></AboutCard>
+      <div class=" grid grid-cols-6 gap-4">
+
+        <div class="col-span-4 ">
+          <div v-for="profile in profiles" :key="profile.sys.id">
+            <AboutCard :about="profile"></AboutCard>
+          </div>
+        </div>
+        <div class="col-span-2 col-start-5 flex justify-center ">
+          <Timeline class="mr-10 mt-10"></Timeline>
+        </div>
+
+
       </div>
+
+
+
+
       <div class="mt-72">
         <Footer></Footer>
       </div>
@@ -29,6 +43,8 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { useRuntimeConfig } from '#imports';
+import Timeline from "../components/Timeline.vue";
+import EducationCard from "../components/EducationCard.vue";
 
 const config = useRuntimeConfig();
 const profiles = ref([]);
