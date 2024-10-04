@@ -86,7 +86,7 @@
             ]">
               Home
             </NuxtLink>
-            <NuxtLink href="financial-machine-learning" :class="[
+            <NuxtLink to="/financial-machine-learning" :class="[
               'rounded-md px-3 py-2 text-sm font-medium',
               page === 'financial-machine-learning'
                 ? 'bg-gray-900 text-white'
@@ -94,7 +94,7 @@
             ]">
               Financial Machine Learning
             </NuxtLink>
-            <NuxtLink href="workshops" :class="[
+            <NuxtLink to="/workshops" :class="[
               'rounded-md px-3 py-2 text-sm font-medium',
               page === 'workshops'
                 ? 'bg-gray-900 text-white'
@@ -110,7 +110,7 @@
             ]">
               Books
             </NuxtLink>
-            <NuxtLink href="/investment-management" :class="[
+            <NuxtLink to="/investment-management" :class="[
               'rounded-md px-3 py-2 text-sm font-medium',
               page === 'investment-management'
                 ? 'bg-gray-900 text-white'
@@ -126,7 +126,7 @@
             ]">
               About
             </NuxtLink>
-            <NuxtLink href="/contact" :class="[
+            <NuxtLink to="/contact" :class="[
               'rounded-md px-3 py-2 text-sm font-medium',
               page === 'email'
                 ? 'bg-gray-900 text-white'

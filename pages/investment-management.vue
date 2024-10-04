@@ -108,7 +108,10 @@
 
       </div>
     </Transition>
-    <Footer></Footer>
+
+    <div>
+      <Footer></Footer>
+    </div>
   </div>
 </template>
 

@@ -28,13 +28,15 @@
             :document="paragraph.fields.body" /> -->
             </div>
           </div>
-          <Footer class="mt-40"></Footer>
+
 
         </div>
       </Transition>
 
       <LoadingCard v-if="isLoading" message="Loading content..."></LoadingCard>
-
+      <div class="w-full mt-20">
+        <Footer></Footer>
+      </div>
 
     </div>
 
@@ -47,7 +49,6 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
-import RichTextRenderer from 'contentful-rich-text-vue-renderer';
 import { useRuntimeConfig } from '#imports';
 
 var sortedParagraphs = ref([]);

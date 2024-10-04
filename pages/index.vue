@@ -10,6 +10,10 @@
           <div class="container mx-auto">
             <div class="flex flex-col w-full lg:w-1/2 md:ml-16 items-start md:items-start px-6 tracking-wide">
               <p class="text-black text-2xl my-4">Welcome to E.P. Chan & Associates</p>
+              <NuxtLink to="/land"
+                class="flex justify-center w-full rounded border border-blue-600 bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75">
+                Switch to Prototype
+              </NuxtLink>
             </div>
           </div>
         </div>
