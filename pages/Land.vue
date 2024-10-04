@@ -186,52 +186,54 @@
                     <ul class="mt-8 grid gap-4 grid-cols-3">
 
                         <li>
-                            <a href="#" class="group block overflow-hidden ">
+                            <NuxtLink to="/books" class="group block overflow-hidden ">
                                 <img src="public/img/book.jpg" alt=""
                                     class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[600px]" />
 
                                 <div class="flex justify-center items-center  p-2">
-                                    <Nuxtlink
+                                    <NuxtLink
                                         class="flex justify-center w-full rounded border border-blue-600 bg-blue-600 px-16 py-2 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 "
-                                        to="/financial-machine-learning">
+                                        to="/books">
                                         Find out more
-                                    </Nuxtlink>
+                                    </NuxtLink>
 
 
                                 </div>
-                            </a>
+                            </NuxtLink>
                         </li>
 
                         <li>
-                            <a href="#" class="group block overflow-hidden ">
+                            <NuxtLink to="/books" class="group block overflow-hidden ">
                                 <img src="public/img/algo-book.png" alt=""
                                     class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[600px]" />
 
                                 <div class="flex justify-center items-center  p-2">
-                                    <a class="flex justify-center w-full rounded border border-blue-600 bg-blue-600 px-16 py-2 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 "
-                                        href="#">
+                                    <NuxtLink
+                                        class="flex justify-center w-full rounded border border-blue-600 bg-blue-600 px-16 py-2 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 "
+                                        to="/books">
                                         Find out more
-                                    </a>
+                                    </NuxtLink>
 
 
                                 </div>
-                            </a>
+                            </NuxtLink>
                         </li>
 
                         <li>
-                            <a href="#" class="group block overflow-hidden ">
+                            <NuxtLink to="/books" class="group block overflow-hidden ">
                                 <img src="public/img/machine-book.png" alt=""
                                     class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[600px]" />
 
                                 <div class="flex justify-center items-center  p-2">
-                                    <a class="flex justify-center w-full rounded border border-blue-600 bg-blue-600 px-16 py-2 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 "
-                                        href="#">
+                                    <NuxtLink
+                                        class="flex justify-center w-full rounded border border-blue-600 bg-blue-600 px-16 py-2 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 "
+                                        to="/books">
                                         Find out more
-                                    </a>
+                                    </NuxtLink>
 
 
                                 </div>
-                            </a>
+                            </NuxtLink>
                         </li>
 
 
