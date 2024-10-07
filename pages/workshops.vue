@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen bg-gray-800">
     <Navbar page="workshops" />
-    <section class="px-8 py-24 bg-gray-800">
+    <section class="py-24 bg-gray-800">
       <div class="container mx-auto text-center">
         <h2 class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-white mb-4">
           Workshops</h2>
@@ -26,9 +26,10 @@
 
 
           </div>
-          <BonusCourseCard class="mt-10 border border-gray-100"></BonusCourseCard>
+
         </div>
       </Transition>
+      <BonusCourseCard class="mt-10 "></BonusCourseCard>
 
       <div class="mt-10">
         <Review></Review>
