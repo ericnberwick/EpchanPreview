@@ -2,11 +2,11 @@
     <ul class="mt-4  ">
         <li class="">
             <a class="block h-full rounded-lg border border-gray-700 p-4 transition-all ">
-                <strong v-if="paragraph.fields.title != 'notitle'" class="font-medium text-white text-lg">{{
+                <strong v-if="paragraph.fields.title != 'notitle'" class="font-medium text-white text-xl">{{
                     paragraph.fields.title }}</strong>
 
 
-                <p class="mt-1 text-sm font-medium text-gray-300 ">
+                <p class="mt-1 text-lg font-medium text-gray-300 ">
                     <RichTextRenderer :document="paragraph.fields.body" />
                 </p>
             </a>

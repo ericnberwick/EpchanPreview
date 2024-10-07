@@ -19,9 +19,9 @@
           <p class="text-lg font-medium text-gray-300">
             <RichTextRenderer :document="about.fields.description2" :renderMark="renderMark" :renderNode="renderNode" />
           </p>
-          <div class=" h-1/2 w-full">
+          <!-- <div class=" h-1/2 w-full">
             <EducationCard></EducationCard>
-          </div>
+          </div> -->
         </div>
 
 

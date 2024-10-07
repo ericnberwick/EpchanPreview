@@ -19,7 +19,7 @@
 
       <Transition name="fade">
         <div v-if="!isLoading" class="mt-24 mx-8">
-          <div class="grid gap-8 grid-cols-3 grid-cols-1 ">
+          <div class="grid gap-8 lg:grid-cols-3 grid-cols-1 ">
             <div v-for="course in courses" :key="course.sys.id">
               <CourseCard :course="course" class="border-4-border-red-900" />
             </div>

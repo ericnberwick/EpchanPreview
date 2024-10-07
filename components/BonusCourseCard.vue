@@ -8,15 +8,7 @@
                     Complete list of our pre-recorded online courses
                 </h3>
                 <p class="text-base text-left">
-                    Unlock the world of algorithmic trading with Dr. Ernest P. Chan's catalog of courses! Enjoy
-                    unlimited
-                    access to pre-recorded lessons on Adobe Connect, narrated by Dr. Chan himself. Each course includes
-                    provided software and sample data, along with unlimited Q&A support via a dedicated Slack channel.
-                    Whether you prefer Matlab or Python, these courses are designed for those with basic familiarity in
-                    either language. Don't miss this chance to learn from an expert—contact ernest@epchan.com for
-                    registration or visit www.epchan.com/workshops for current live offerings. Elevate your trading
-                    skills
-                    today!
+                    Contact ernest@epchan.com for further questions.
                 </p>
             </div>
         </div>

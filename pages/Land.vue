@@ -1,16 +1,17 @@
 <template>
     <div class="w-screen bg-gray-800">
         <Navbar />
-        <div class="w-full grid grid-cols-3">
-            <div class="col-start-1 col-span-1 flex justify-center items-center">
-                <div class="w-full ">
+        <div class="w-full grid xl:grid-cols-3 grid-cols-1">
+            <div class="hidden col-start-1 col-span-1 xl:flex justify-center items-center">
+                <div class="w-full">
                     <div class="w-full flex justify-center items-center">
-                        <h2 id="title" class="font-bold text-white">Welcome to E.P. Chan & Associates</h2>
+                        <h2 id="title" class="font-bold text-white text-center">Welcome to E.P.
+                            Chan &
+                            Associates</h2>
                     </div>
                     <div class=" flex justify-center items-center ">
-                        <p class="text-lg font-medium text-gray-300 w-1/2 ">
-                            A comprehensive platform for high-quality resources and expert insights to enhance
-                            professional development
+                        <p class="text-lg font-medium text-gray-300 w-1/2 text-center">
+                            Insights on Applications of AI and Quantitative Analytics to Asset Management and Beyond
                         </p>
                     </div>
                     <div class="flex flex-wrap justify-center gap-4 mt-4">
@@ -30,32 +31,74 @@
 
 
             </div>
-            <div class="col-start-2 col-span-2">
+            <div class="hidden col-start-2 col-span-2 xl:block">
                 <video autoplay loop muted class="w-full">
                     <source src="public/img/finance.mp4" type="video/webm" />
                 </video>
             </div>
 
+            <div class="xl:hidden col-start-1 col-span-1 flex justify-center items-center">
+
+                <div class="relative ">
+                    <video autoplay loop muted class="w-full">
+                        <source src="public/img/finance.mp4" type="video/webm" />
+                    </video>
+                    <div class="absolute inset-0 flex items-start mt-10 justify-center">
+                        <div class="w-full">
+                            <div class="w-full flex justify-center items-center">
+                                <h2 id="title" class="font-bold text-white text-center">Welcome to E.P.
+                                    Chan &
+                                    Associates</h2>
+                            </div>
+                            <div class=" flex justify-center items-center ">
+                                <p class="text-lg font-medium text-gray-300 w-1/2 text-center">
+                                    Insights on Applications of AI and Quantitative Analytics to Asset Management and
+                                    Beyond
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap justify-center gap-2 mt-4">
+                                <NuxtLink
+                                    class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-2 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto w-3/12"
+                                    to="/workshops">
+                                    Get Started
+                                </NuxtLink>
+
+                                <NuxtLink
+                                    class="block w-full rounded border border-blue-600 px-12 py-2 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto w-3/12"
+                                    to="/financial-machine-learning">
+                                    Learn More
+                                </NuxtLink>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
 
         </div>
         <div class="w-full grid grid-cols-3">
             <div class="col-start-1 col-span-1 flex items-center justify-center">
-                <img src="public/img/epchan.jpg" class="object-cover w-full">
+                <img src="public/img/ernie_2.jpg" class="object-cover w-full">
 
             </div>
-            <div class="col-start-2 col-span-3 flex justify-center items-center">
+            <div class="col-start-2 col-span-3 flex justify-start">
                 <section class="bg-gray-800 text-white ">
                     <div class="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
                         <div class="max-w-xl">
                             <h2 class="text-6xl font-bold ">Dr Ernest P Chan</h2>
 
                             <p class="mt-4 text-gray-300 text-2xl">
-                                Ernest P. Chan, is an expert in machine learning and the application of quantitative
+                                Ernest P. Chan, is an <a href="https://predictnow.ai/"
+                                    class="text-blue-600 hover:text-blue-800 underline hover:no-underline font-medium transition duration-300 ease-in-out">expert</a>
+                                in machine learning and the application of quantitative
                                 models for asset management.
                             </p>
                         </div>
 
-                        <div class="mt-8 grid grid-cols-2 gap-12">
+                        <div class="mt-8 grid grid-cols-1 gap-12">
                             <div class="flex items-start gap-4">
                                 <span class="shrink-0 rounded-lg bg-gray-800 p-4">
                                     <svg class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -177,10 +220,6 @@
                 <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
                     <header class="text-center">
                         <h2 class="text-6xl font-bold text-white ">Our top rated resources</h2>
-
-                        <p class="mx-auto mt-4 max-w-md text-gray-300">
-                            Explore some our favourited coruses from our students
-                        </p>
                     </header>
 
                     <ul class="mt-8 grid gap-4 grid-cols-4">
@@ -189,16 +228,6 @@
                             <NuxtLink to="/books" class="group block overflow-hidden ">
                                 <img src="public/img/book.jpg" alt=""
                                     class="h-[350px] w-full object-cover transition duration-500 hover:scale-105 sm:h-[450px]" />
-
-                                <div class="flex justify-center items-center  p-2">
-                                    <NuxtLink
-                                        class="flex justify-center w-full rounded border border-blue-600 bg-blue-600 px-16 py-2 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 "
-                                        to="/books">
-                                        Find out more
-                                    </NuxtLink>
-
-
-                                </div>
                             </NuxtLink>
                         </li>
 
@@ -206,16 +235,6 @@
                             <NuxtLink to="/books" class="group block overflow-hidden ">
                                 <img src="public/img/algo-book.png" alt=""
                                     class="h-[350px] w-full object-cover transition duration-500 hover:scale-105 sm:h-[450px]" />
-
-                                <div class="flex justify-center items-center  p-2">
-                                    <NuxtLink
-                                        class="flex justify-center w-full rounded border border-blue-600 bg-blue-600 px-16 py-2 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 "
-                                        to="/books">
-                                        Find out more
-                                    </NuxtLink>
-
-
-                                </div>
                             </NuxtLink>
                         </li>
 
@@ -223,16 +242,6 @@
                             <NuxtLink to="/books" class="group block overflow-hidden ">
                                 <img src="public/img/machine-book.png" alt=""
                                     class="h-[350px] w-full object-cover transition duration-500 hover:scale-105 sm:h-[450px]" />
-
-                                <div class="flex justify-center items-center  p-2">
-                                    <NuxtLink
-                                        class="flex justify-center w-full rounded border border-blue-600 bg-blue-600 px-16 py-2 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 "
-                                        to="/books">
-                                        Find out more
-                                    </NuxtLink>
-
-
-                                </div>
                             </NuxtLink>
                         </li>
 
@@ -240,16 +249,6 @@
                             <NuxtLink to="/books" class="group block overflow-hidden ">
                                 <img src="public/img/gen-ai-book.jpg" alt=""
                                     class="h-[350px] w-full object-cover transition duration-500 hover:scale-105 sm:h-[450px]" />
-
-                                <div class="flex justify-center items-center  p-2">
-                                    <NuxtLink
-                                        class="flex justify-center w-full rounded border border-blue-600 bg-blue-600 px-16 py-2 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 "
-                                        to="/books">
-                                        Find out more
-                                    </NuxtLink>
-
-
-                                </div>
                             </NuxtLink>
                         </li>
 

@@ -31,7 +31,7 @@
                   automated trading strategies across various asset classes.</h3>
                 <div class="mt-4">
                   <a class="inline-flex items-center gap-2 rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-indigo-800 transition-all hover:text-gray-100 focus:outline-none focus:ring active:text-indigo-500"
-                    href="https://qtscm.com/">
+                    href="https://qtscm.com/" target="_blank">
                     <span class="text-sm font-medium"> Find out more </span>
 
                     <svg class="size-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -70,7 +70,7 @@
                 <h2 class="text-4xl font-bold">Data Driven</h2>
               </div>
 
-              <p class="m-4 text-lg font-medium text-gray-300 ">Led by a team of Mathematicians and Physicists QTS has
+              <p class="m-4 text-lg font-medium text-gray-300 ">Led by a team of mathematicians and physicists QTS has
                 developed a proprietary quantitative approach to
                 strategy development and selection with a strong emphasis on uncorrelated risk-adjusted returns and risk
                 mitigation. </p>
