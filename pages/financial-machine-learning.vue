@@ -20,16 +20,8 @@
           <div class="rounded-xl border border-gray-700 bg-gray-800 px-8 py-4">
             <div v-for="paragraph in sortedParagraphs" :key="paragraph.sys.id">
               <ParagraphCard :paragraph="paragraph"></ParagraphCard>
-              <!-- <h2 v-if="paragraph.fields.title != 'notitle'" class="font-bold my-4 text-xl text-white">{{
-            paragraph.fields.title }}
-          </h2>
-          <RichTextRenderer
-            class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal text-white"
-            :document="paragraph.fields.body" /> -->
             </div>
           </div>
-
-
         </div>
       </Transition>
 
@@ -37,15 +29,9 @@
       <div class="w-full mt-20">
         <Footer></Footer>
       </div>
-
     </div>
-
-
-
-
   </div>
 </template>
-
 
 <script setup>
 import { ref, onMounted } from "vue";
@@ -55,7 +41,6 @@ var sortedParagraphs = ref([]);
 const isLoading = ref(true);
 
 const config = useRuntimeConfig();
-// Define a ref to hold fetched data
 const paragraphs = ref([]);
 const spaceName = config.public.CONTENTFUL_SPACE_ID;
 const accessTokenName = config.public.CONTENTFUL_ACCESS_KEY;
@@ -78,7 +63,7 @@ async function fetchEntries() {
     content_type: "financialMachineLearningParagraph", // Ensure this matches the actual ID in Contentful
   });
   // Assign data to reviews ref
-  console.log("res.items ", res.items)
+
   paragraphs.value = res.items;
   sortedParagraphs.value = res.items.slice().sort((a, b) => a.fields.order - b.fields.order);
   console.log("sortedparagrahps", sortedParagraphs);

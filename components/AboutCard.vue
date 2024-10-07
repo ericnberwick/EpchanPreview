@@ -1,34 +1,36 @@
 <template>
-  <div class="flex justify-center">
-
-    <div class=" overflow-hidden">
-      <div class="grid grid-cols-3 grid-rows-2 bg-gray-800 p-8">
-
-        <div class=" col-start-1 row-start-1 flex items-center justify-center ">
-          <img :src="'https:' + about.fields.profilePicture.fields.file.url" alt="image" loading="lazy"
-            class="rounded-2xl object-cover " style="height: 25rem;">
-        </div>
-
-        <div class="col-start-2 row-start-1 col-span-2 text-white flex  justify-center mt-10">
-          <p class="text-lg font-medium text-gray-300 ">
-            <RichTextRenderer :document="about.fields.description" :renderMark="renderMark" :renderNode="renderNode" />
-          </p>
-        </div>
-
-        <div class="col-start-1 row-start-2 col-span-3 grid grid-cols-1 grid-rows-2 ">
-          <p class="text-lg font-medium text-gray-300">
-            <RichTextRenderer :document="about.fields.description2" :renderMark="renderMark" :renderNode="renderNode" />
-          </p>
-          <!-- <div class=" h-1/2 w-full">
-            <EducationCard></EducationCard>
-          </div> -->
-        </div>
+  <div class="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 grid-rows-1 bg-gray-800 p-8 ">
 
 
-      </div>
+
+    <div class=" col-start-1 row-start-1 flex items-center justify-center 0">
+      <img src="public/img/ernie.jpg" alt="image" loading="lazy" class="">
     </div>
 
+    <div class="lg:col-start-2 lg:row-start-1 lg:col-span-2 text-white lg:flex justify-center  p-4">
+      <div class="lg:hidden block">
+        <img src="public/img/ernie.jpg" alt="image" class="">
+      </div>
+      <p class="text-lg font-medium text-gray-300 ">
+        <RichTextRenderer :document="about.fields.description" :renderMark="renderMark" :renderNode="renderNode" />
+        <RichTextRenderer class="hidden lg:block" :document="about.fields.description2" :renderMark="renderMark"
+          :renderNode="renderNode" />
+      </p>
+
+    </div>
+
+    <div class="col-start-1 row-start-2 col-span-3 grid grid-cols-1 xl:grid-rows-2 lg:hidden block">
+      <p class="text-lg font-medium text-gray-300">
+        <RichTextRenderer :document="about.fields.description2" :renderMark="renderMark" :renderNode="renderNode" />
+      </p>
+      <!-- <div class=" h-1/2 w-full">
+            <EducationCard></EducationCard>
+          </div> -->
+    </div>
+
+
   </div>
+
 </template>
 
 <script setup>

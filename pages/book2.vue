@@ -28,7 +28,7 @@
         </div>
 
 
-        <ul class=" grid grid-cols-5 gap-4 bg-gray-800">
+        <ul class=" grid grid-cols-2 lg:grid-cols-5 gap-4 bg-gray-800">
           <li class="flex flex-col items-center border-2 border-white" v-for="file in files" :key="file">
             <div class="grid grid-cols-2 w-full">
               <div class="flex justify-center align-center   h-[100px] ">

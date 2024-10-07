@@ -29,13 +29,14 @@
               class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500  text-grey"></textarea>
           </div>
 
-          <button @click="sendEmail()" type="submit"
-            class="mb-6 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue">
+          <button @click="sendEmail()" type="submit" :disabled="!enableEmailSubmit" class="mb-6 px-4 py-2 rounded-md focus:outline-none transition duration-150 ease-in-out
+         bg-blue-500 text-white hover:bg-blue-600 focus:shadow-outline-blue
+         disabled:opacity-50 disabled:cursor-not-allowed disabled:bg-gray-400 disabled:hover:bg-gray-400">
             Send Message
           </button>
 
           <transition name="fade">
-            <div v-show="sentMessage" class=" border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md"
+            <div v-show="sentMessage" class=" border-t-4 border-teal-500 rounded-b text-teal-500 px-4 py-3 shadow-xl"
               role="alert">
               <div class="flex">
                 <div class="py-1">
@@ -61,13 +62,17 @@
 
 <script setup lang="ts">
 import { useFetch } from 'nuxt/app';
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import Footer from '../components/Footer.vue';
 
 const sentMessage = ref<boolean>(false);
 const email = ref<string>('');
 const message = ref<string>('');
 const name = ref<string>('');
+
+const enableEmailSubmit = computed(() => {
+  return message.value.length > 0 && email.value.length > 0 && name.value.length > 0
+})
 
 const sendEmail = async () => {
   const { data, error } = await useFetch('/api/send', {

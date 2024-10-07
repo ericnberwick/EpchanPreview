@@ -24,7 +24,7 @@
                 </a> -->
             </div>
 
-            <div class="mt-8 grid gap-4 grid-cols-2">
+            <div class="mt-8 grid gap-4 grid-cols-1 lg:grid-cols-2">
                 <blockquote
                     class="flex h-full flex-col justify-between bg-gray-800 p-6 shadow-sm sm:p-8 border-2 border-gray-200">
                     <div>

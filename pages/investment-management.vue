@@ -16,21 +16,20 @@
         </div>
 
         <div class="">
-          <div class="grid grid-cols-5 gap-4">
-
-            <div class="col-span-2 flex items-center justify-center">
-              <!-- <img src="public/img/qts-logo.png" width="500px"> -->
-              <div class=" m-4 grid grid-cols-1">
-                <h2 class=" font-bold sm:text-6xl">QTS</h2>
-                <h2 class=" font-bold sm:text-6xl">Capital</h2>
-                <h2 class=" font-bold sm:text-6xl">Management</h2>
-                <h3 class="mt-4 text-lg font-medium text-gray-300 ">QTS Capital Management is a quantitative trading
+          <div class="grid grid-cols-5 gap-4 ">
+            <div class="col-span-3 flex items-center justify-center">
+              <div class="ml-48 m-4  w-min lg:ml-0">
+                <h2 class=" font-bold text-7xl w-min">QTS</h2>
+                <h2 class=" font-bold text-7xl w-min">Capital</h2>
+                <h2 class=" font-bold text-7xl w-min">Management</h2>
+                <h3 class="mt-4  text-xl font-medium text-gray-300  ">QTS Capital Management is a quantitative
+                  trading
                   firm
                   that uses advanced mathematical models and computer algorithms to analyze financial markets and
                   execute
                   automated trading strategies across various asset classes.</h3>
-                <div class="mt-4">
-                  <a class="inline-flex items-center gap-2 rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-indigo-800 transition-all hover:text-gray-100 focus:outline-none focus:ring active:text-indigo-500"
+                <div class="mt-4 ">
+                  <a class="inline-flex items-center gap-4 rounded border border-indigo-600 bg-indigo-600 px-16 py-4 text-white hover:bg-indigo-800 transition-all hover:text-gray-100 focus:outline-none focus:ring active:text-indigo-500"
                     href="https://qtscm.com/" target="_blank">
                     <span class="text-sm font-medium"> Find out more </span>
 
@@ -46,13 +45,13 @@
 
             </div>
 
-            <div class="col-span-2 col-start-4">
-              <img src="public/img/qts.png" width="600">
+            <div class="col-span-2 col-start-4 lg:block hidden">
+              <img src="public/img/building.jpg" width="600">
             </div>
 
           </div>
 
-          <div class="mt-16 grid grid-cols-3">
+          <div class="mt-16 grid grid-cols-1 lg:grid-cols-3">
             <div>
               <div class="flex items-center">
                 <img src="public/img/calender.svg" width="16px" class="m-4 ">

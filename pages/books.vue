@@ -31,12 +31,7 @@
         <Footer class=""></Footer>
       </div>
     </div>
-
-
-
   </div>
-
-
 </template>
 
 <script setup>
@@ -44,15 +39,14 @@ import { ref, onMounted } from "vue";
 import { useRuntimeConfig } from '#imports';
 
 const config = useRuntimeConfig();
-// Define a ref to hold fetched data
 const reviews = ref([]);
 const spaceName = config.public.CONTENTFUL_SPACE_ID;
 const accessTokenName = config.public.CONTENTFUL_ACCESS_KEY;
 
 let client;
 const isLoading = ref(true);
-onMounted(() => {
 
+onMounted(() => {
   fetchEntries();
   isLoading.value = false;
 });
@@ -68,6 +62,6 @@ async function fetchEntries() {
     content_type: "book",
   });
 
-  reviews.value = res.items;
+  reviews.value = res.items.slice().sort((a, b) => a.fields.order - b.fields.order);
 }
 </script>

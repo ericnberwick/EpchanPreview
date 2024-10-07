@@ -11,10 +11,10 @@
         </div>
       </div>
 
-      <div class=" grid grid-cols-6 gap-4">
+      <div class=" grid grid-cols-1 xl:grid-cols-6 gap-4">
         <Transition name="fade">
           <div class="col-span-4 " v-if="!isLoading">
-            <div v-for="profile in profiles" :key="profile.sys.id">
+            <div class="" v-for="profile in profiles" :key="profile.sys.id">
               <AboutCard :about="profile"></AboutCard>
             </div>
           </div>
@@ -23,8 +23,12 @@
           <LoadingCard v-if="isLoading" message="Loading content..."></LoadingCard>
         </div>
 
-        <div class="col-span-2 col-start-5 flex justify-center ">
+        <div class="col-span-2 col-start-5 xl:flex xl:justify-center hidden ">
           <Timeline class="ml-6 mr-10 mt-10"></Timeline>
+        </div>
+
+        <div class="xl:hidden block">
+          <Timeline></Timeline>
         </div>
 
 
