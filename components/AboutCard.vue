@@ -4,12 +4,12 @@
 
 
     <div class=" col-start-1 row-start-1 flex items-center justify-center 0">
-      <img src="public/img/ernie.jpg" alt="image" loading="lazy" class="">
+      <img src="public/img/Ernie.jpg" alt="image" loading="lazy" class="">
     </div>
 
     <div class="lg:col-start-2 lg:row-start-1 lg:col-span-2 text-white lg:flex justify-center  p-4">
       <div class="lg:hidden block">
-        <img src="public/img/ernie.jpg" alt="image" class="">
+        <img src="public/img/Ernie.jpg" alt="image" class="">
       </div>
       <p class="text-lg font-medium text-gray-300 ">
         <RichTextRenderer :document="about.fields.description" :renderMark="renderMark" :renderNode="renderNode" />

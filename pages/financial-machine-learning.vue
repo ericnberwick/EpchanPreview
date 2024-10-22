@@ -2,33 +2,33 @@
   <div class="h-screen bg-gray-800">
     <Navbar page="financial-machine-learning" />
 
-
-    <div class="px-8 py-24 bg-gray-800">
-      <div class="container mx-auto text-center">
+    <div class="py-24">
+      <div class="mt- flex justify-center">
         <h2 class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-white mb-4">
           Financial Machine Learning</h2>
-        <p class="block antialiased font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500">
-        </p>
+
       </div>
 
       <div class="w-full h-56 overflow-hidden mb-8">
         <NuxtImg src="img/finance-banner.jpg" class="w-full h-full object-cover"
-          style="object-position: center bottom;"></NuxtImg>
+          style="object-position: center bottom;">
+        </NuxtImg>
       </div>
-      <Transition name="fade">
-        <div v-if="!isLoading" class="w - full text - white">
-          <div class="rounded-xl border border-gray-700 bg-gray-800 px-8 py-4">
-            <div v-for="paragraph in sortedParagraphs" :key="paragraph.sys.id">
-              <ParagraphCard :paragraph="paragraph"></ParagraphCard>
-            </div>
-          </div>
+    </div>
+    <section class="bg-gray-800 px-8">
+      <!-- Container -->
+      <div class="pt-48">
+        <!-- Component -->
+        <div class="relative py-16 md:py-24 lg:py-32">
+          <!-- Items -->
+          <ParagraphCard v-for="(paragraph, index) in sortedParagraphs" :key="index" :paragraph="paragraph"
+            class="bg-gray-800 ">
+          </ParagraphCard>
         </div>
-      </Transition>
-
-      <LoadingCard v-if="isLoading" message="Loading content..."></LoadingCard>
-      <div class="w-full mt-20">
-        <Footer></Footer>
       </div>
+    </section>
+    <div class="w-full">
+      <Footer></Footer>
     </div>
   </div>
 </template>
@@ -66,7 +66,7 @@ async function fetchEntries() {
 
   paragraphs.value = res.items;
   sortedParagraphs.value = res.items.slice().sort((a, b) => a.fields.order - b.fields.order);
-  console.log("sortedparagrahps", sortedParagraphs);
+  //console.log("sortedparagrahps", sortedParagraphs);
 }
 
 // Fetch data on component mount
