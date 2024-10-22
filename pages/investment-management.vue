@@ -11,8 +11,8 @@
         </div>
 
         <div class="w-full h-56 overflow-hidden mb-8">
-          <NuxtImg src="img/investment-management.jpg" class="w-full h-full object-cover rounded-xl"
-            style="object-position: center bottom;"></NuxtImg>
+          <NuxtImg src="img/finances.jpg" class="w-full h-full object-cover object-center rounded-xl"
+            style="object-position: center top;"></NuxtImg>
         </div>
 
         <div class="">
