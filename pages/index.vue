@@ -4,8 +4,8 @@
     <div class="w-full grid xl:grid-cols-3 grid-cols-1">
       <div class="hidden col-start-1 col-span-1 xl:flex justify-center items-center">
         <div class="w-full">
-          <div class="w-full flex justify-center items-center">
-            <h2 id="title" class="font-bold text-white text-center">Welcome to E.P.
+          <div class="w-full flex justify-center items-center ">
+            <h2 id="title" class="font-bold text-white text-center ">Welcome to E.P.
               Chan &
               Associates</h2>
           </div>
@@ -58,13 +58,13 @@
               </div>
               <div class="flex flex-wrap justify-center gap-2 mt-4">
                 <NuxtLink
-                  class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-2 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto w-3/12"
+                  class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-2 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto w-2/6"
                   to="/workshops">
                   Get Started
                 </NuxtLink>
 
                 <NuxtLink
-                  class="block w-full rounded border border-blue-600 px-12 py-2 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto w-3/12"
+                  class="block w-full rounded border border-blue-600 px-12 py-2 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto w-2/6"
                   to="/financial-machine-learning">
                   Learn More
                 </NuxtLink>
@@ -78,11 +78,11 @@
 
     </div>
     <div class="w-full grid grid-cols-1 lg:grid-cols-3">
-      <div class="col-start-1 col-span-1 flex items-center justify-center">
+      <div class="col-start-1 col-span-1 flex items-center justify-center ">
         <img src="public/img/ernie_2.jpg" class="object-cover w-full">
 
       </div>
-      <div class="col-start-2 col-span-3 flex justify-start">
+      <div class="col-start-2 col-span-3 flex justify-start mt-20 md:mt-0">
         <section class="bg-gray-800 text-white ">
           <div class="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
             <div class="max-w-xl">
