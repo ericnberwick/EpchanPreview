@@ -209,13 +209,24 @@
     <div class="w-full ">
 
       <section>
-        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+        <div class="mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
           <header class="text-center">
             <h2 class="text-6xl font-bold text-white ">Our top rated resources</h2>
           </header>
 
-          <ul class="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4 lg:grid-cols-4">
-
+          <ul class="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4 lg:grid-cols-5">
+            <li>
+              <NuxtLink to="/books" class="group block overflow-hidden ">
+                <img src="public/img/gen-ai-book.jpg" alt=""
+                  class="h-[350px] w-full object-cover transition duration-500 hover:scale-105 sm:h-[450px]" />
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/books" class="group block overflow-hidden ">
+                <img src="public/img/aiTrading.jpg" alt=""
+                  class="h-[350px] w-full object-cover transition duration-500 hover:scale-105 sm:h-[450px]" />
+              </NuxtLink>
+            </li>
             <li>
               <NuxtLink to="/books" class="group block overflow-hidden ">
                 <img src="public/img/book.jpg" alt=""
@@ -237,12 +248,7 @@
               </NuxtLink>
             </li>
 
-            <li>
-              <NuxtLink to="/books" class="group block overflow-hidden ">
-                <img src="public/img/gen-ai-book.jpg" alt=""
-                  class="h-[350px] w-full object-cover transition duration-500 hover:scale-105 sm:h-[450px]" />
-              </NuxtLink>
-            </li>
+
           </ul>
         </div>
       </section>
