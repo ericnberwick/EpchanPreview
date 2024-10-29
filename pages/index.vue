@@ -40,9 +40,10 @@
       <div class="xl:hidden col-start-1 col-span-1 flex justify-center items-center">
 
         <div class="relative ">
-          <video autoplay loop muted class="w-full">
+          <video autoplay loop muted class="w-full hidden md:block">
             <source src="public/img/finance.mp4" type="video/webm" />
           </video>
+          <img class="block md:hidden" src="public/img/mobile-land.jpg">
           <div class="absolute inset-0 flex items-start mt-10 justify-center">
             <div class="w-full">
               <div class="w-full flex justify-center items-center">
@@ -58,13 +59,13 @@
               </div>
               <div class="flex flex-wrap justify-center gap-2 mt-4">
                 <NuxtLink
-                  class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-2 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto w-2/6"
+                  class="block w-full rounded border md:border-blue-600 bg-blue-800 md:bg-blue-600 px-12 py-2 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto w-2/6 mx-20 sm:mx-0"
                   to="/workshops">
                   Get Started
                 </NuxtLink>
 
                 <NuxtLink
-                  class="block w-full rounded border border-blue-600 px-12 py-2 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto w-2/6"
+                  class="block w-full rounded border bg-blue-800 md:bg-black px-12 py-2 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto w-2/6 mx-20 sm:mx-0"
                   to="/financial-machine-learning">
                   Learn More
                 </NuxtLink>
