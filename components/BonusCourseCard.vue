@@ -1,9 +1,9 @@
 <template>
-    <div class=" bg-black grid grid-cols-6 ">
+    <div class=" bg-black grid grid-cols-1 md:grid-cols-6 ">
 
-        <div class="col-start-2 flex justify-center ">
+        <div class="col-start-2 col-span-2 flex justify-center ">
             <div class="flex gap-4 justify-center flex-col px-4">
-                <h3 class="font-bold text-white text-xl mb-4">
+                <h3 class="font-bold text-white text-3xl mb-4">
                     Complete list of our pre-recorded online courses
                 </h3>
 
