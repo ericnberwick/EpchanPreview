@@ -3,7 +3,7 @@
     <div class="card__content relative transition-transform duration-1000 ">
       <div class="container grid  gap-2 pr-2">
         <div
-          class="relative flex-col bg-clip-border rounded-xl bg-transparent text-gray-700 shadow-none grid gap-2 item grid-cols-3 border-2 border-green-900">
+          class="relative flex-col bg-clip-border rounded-xl bg-transparent text-gray-700 shadow-none grid gap-2 item grid-cols-1 lg:grid-cols-3 border-2 border-green-900">
           <div class=" relative bg-clip-border text-gray-700 m-0 overflow-hidden flex items-center justify-center">
 
             <a :href="review.fields.linkToBook" class="">
@@ -20,7 +20,8 @@
 
           </div>
 
-          <div class="p-6 px-2 sm:pr-6 sm:pl-4 text-white p-6 px-2 sm:pr-6 sm:pl-4 text-white col-start-2 col-span-2">
+          <div
+            class="p-6 px-2 sm:pr-6 sm:pl-4 text-white p-6 px-2 sm:pr-6 sm:pl-4 text-white col-start-1 lg:col-start-2 col-span-1 lg:col-span-2">
             <a :href="review.fields.linkToBook"
               class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-blue-gray-900 mb-2 normal-case transition-colors hover:text-green-500">{{
                 review.fields.title }}</a>
