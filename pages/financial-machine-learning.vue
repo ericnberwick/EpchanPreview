@@ -308,452 +308,452 @@
           </ScrollTransition>
         </div>
 
-        <ScrollTransition>
-          <section>
-            <!-- Container -->
-            <div class="mt-20 mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
-              <!-- Title -->
-              <div class="mb-12 flex flex-col md:flex-row">
-                <h1
-                  class="text-4xl font-bold leading-tight text-white sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj mb-4">
-                  Our Research Articles and Presentations</h1>
 
+        <section>
+          <!-- Container -->
+          <div class="mt-20 mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
+            <!-- Title -->
+            <div class="mb-12 flex flex-col md:flex-row">
+              <h1
+                class="text-4xl font-bold leading-tight text-white sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj mb-4">
+                Our Research Articles and Presentations</h1>
+
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+              <!-- FactsCard -->
+              <div>
+                <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
+                  <div class="relative">
+                    <img src="public/img/blogPics/blog1.jpeg" alt=""
+                      class="inline-block h-48 w-full rounded-md object-cover" />
+
+                  </div>
+                  <div class="flex w-full flex-col gap-5">
+
+                    <p class="font-bold">What is the probability of profit of your next trade?
+                      (Introducing PredictNow.ai)</p>
+                    <!-- Divider -->
+                    <div class="h-px w-full bg-black"></div>
+                    <div class="flex items-center">
+
+                      <div class="flex flex-col md:flex-row md:items-center">
+                        <p class="text-sm font-medium text-gray-500">explains in details how
+                          you
+                          can use our SaaS to improve your existing investment or trading
+                          strategy.</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
               </div>
-              <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                <!-- FactsCard -->
-                <div>
-                  <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
-                    <div class="relative">
-                      <img src="public/img/blogPics/blog1.jpeg" alt=""
-                        class="inline-block h-48 w-full rounded-md object-cover" />
+              <div>
+                <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
+                  <div class="relative">
+                    <img src="public/img/blogPics/blog2.jpeg" alt=""
+                      class="inline-block h-48 w-full rounded-md object-cover" />
 
-                    </div>
-                    <div class="flex w-full flex-col gap-5">
+                  </div>
+                  <div class="flex w-full flex-col gap-5">
 
-                      <p class="font-bold">What is the probability of profit of your next trade?
-                        (Introducing PredictNow.ai)</p>
-                      <!-- Divider -->
-                      <div class="h-px w-full bg-black"></div>
-                      <div class="flex items-center">
+                    <p class="font-bold">The best way to select features?</p>
+                    <!-- Divider -->
+                    <div class="h-px w-full bg-black"></div>
+                    <div class="flex items-center">
 
-                        <div class="flex flex-col md:flex-row md:items-center">
-                          <p class="text-sm font-medium text-gray-500">explains in details how
-                            you
-                            can use our SaaS to improve your existing investment or trading
-                            strategy.</p>
-                        </div>
+                      <div class="flex flex-col md:flex-row md:items-center">
+                        <p class="text-sm font-medium text-gray-500">preprint by Xin Man and
+                          Ernest Chan comparing MDA, LIME, and SHAP feature selection
+                          methods in machine learning.</p>
                       </div>
                     </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
-                    <div class="relative">
-                      <img src="public/img/blogPics/blog2.jpeg" alt=""
-                        class="inline-block h-48 w-full rounded-md object-cover" />
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
+                  <div class="relative">
+                    <img src="public/img/blogPics/blog3.jpeg" alt=""
+                      class="inline-block h-48 w-full rounded-md object-cover" />
 
-                    </div>
-                    <div class="flex w-full flex-col gap-5">
+                  </div>
+                  <div class="flex w-full flex-col gap-5">
 
-                      <p class="font-bold">The best way to select features?</p>
-                      <!-- Divider -->
-                      <div class="h-px w-full bg-black"></div>
-                      <div class="flex items-center">
+                    <p class="font-bold">US nonfarm employment prediction using RIWI Corp.
+                      alternative data</p>
+                    <!-- Divider -->
+                    <div class="h-px w-full bg-black"></div>
+                    <div class="flex items-center">
 
-                        <div class="flex flex-col md:flex-row md:items-center">
-                          <p class="text-sm font-medium text-gray-500">preprint by Xin Man and
-                            Ernest Chan comparing MDA, LIME, and SHAP feature selection
-                            methods in machine learning.</p>
-                        </div>
+                      <div class="flex flex-col md:flex-row md:items-center">
+                        <p class="text-sm font-medium text-gray-500">working paper by Radu
+                          Ciobanu and Ernest Chan on using alternative data to predict NFP
+                          numbers.</p>
                       </div>
                     </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
-                    <div class="relative">
-                      <img src="public/img/blogPics/blog3.jpeg" alt=""
-                        class="inline-block h-48 w-full rounded-md object-cover" />
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
+                  <div class="relative">
+                    <img src="public/img/blogPics/blog4.jpeg" alt=""
+                      class="inline-block h-48 w-full rounded-md object-cover" />
 
-                    </div>
-                    <div class="flex w-full flex-col gap-5">
+                  </div>
+                  <div class="flex w-full flex-col gap-5">
 
-                      <p class="font-bold">US nonfarm employment prediction using RIWI Corp.
-                        alternative data</p>
-                      <!-- Divider -->
-                      <div class="h-px w-full bg-black"></div>
-                      <div class="flex items-center">
+                    <p class="font-bold">Financial Data Science and Machine Learning</p>
+                    <!-- Divider -->
+                    <div class="h-px w-full bg-black"></div>
+                    <div class="flex items-center">
 
-                        <div class="flex flex-col md:flex-row md:items-center">
-                          <p class="text-sm font-medium text-gray-500">working paper by Radu
-                            Ciobanu and Ernest Chan on using alternative data to predict NFP
-                            numbers.</p>
-                        </div>
+                      <div class="flex flex-col md:flex-row md:items-center">
+                        <p class="text-sm font-medium text-gray-500">webinar at futures.io,
+                          October 2019.</p>
                       </div>
                     </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
-                    <div class="relative">
-                      <img src="public/img/blogPics/blog4.jpeg" alt=""
-                        class="inline-block h-48 w-full rounded-md object-cover" />
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
+                  <div class="relative">
+                    <img src="public/img/blogPics/blog5.jpeg" alt=""
+                      class="inline-block h-48 w-full rounded-md object-cover" />
 
-                    </div>
-                    <div class="flex w-full flex-col gap-5">
+                  </div>
+                  <div class="flex w-full flex-col gap-5">
 
-                      <p class="font-bold">Financial Data Science and Machine Learning</p>
-                      <!-- Divider -->
-                      <div class="h-px w-full bg-black"></div>
-                      <div class="flex items-center">
+                    <p class="font-bold">What we learned from Kaggle Two-Sigma News Sentiment
+                      competition?</p>
+                    <!-- Divider -->
+                    <div class="h-px w-full bg-black"></div>
+                    <div class="flex items-center">
 
-                        <div class="flex flex-col md:flex-row md:items-center">
-                          <p class="text-sm font-medium text-gray-500">webinar at futures.io,
-                            October 2019.</p>
-                        </div>
+                      <div class="flex flex-col md:flex-row md:items-center">
+                        <p class="text-sm font-medium text-gray-500">UNICOM conference
+                          keynote speech, London, June 2019.</p>
                       </div>
                     </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
-                    <div class="relative">
-                      <img src="public/img/blogPics/blog5.jpeg" alt=""
-                        class="inline-block h-48 w-full rounded-md object-cover" />
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
+                  <div class="relative">
+                    <img src="public/img/blogPics/blog6.jpeg" alt=""
+                      class="inline-block h-48 w-full rounded-md object-cover" />
 
-                    </div>
-                    <div class="flex w-full flex-col gap-5">
+                  </div>
+                  <div class="flex w-full flex-col gap-5">
 
-                      <p class="font-bold">What we learned from Kaggle Two-Sigma News Sentiment
-                        competition?</p>
-                      <!-- Divider -->
-                      <div class="h-px w-full bg-black"></div>
-                      <div class="flex items-center">
+                    <p class="font-bold">Is News Sentiment Still Adding Alpha?</p>
+                    <!-- Divider -->
+                    <div class="h-px w-full bg-black"></div>
+                    <div class="flex items-center">
 
-                        <div class="flex flex-col md:flex-row md:items-center">
-                          <p class="text-sm font-medium text-gray-500">UNICOM conference
-                            keynote speech, London, June 2019.</p>
-                        </div>
+                      <div class="flex flex-col md:flex-row md:items-center">
+                        <p class="text-sm font-medium text-gray-500">blog post on
+                          epchan.blogspot.com on our News Sentiment research.</p>
                       </div>
                     </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
-                    <div class="relative">
-                      <img src="public/img/blogPics/blog6.jpeg" alt=""
-                        class="inline-block h-48 w-full rounded-md object-cover" />
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
+                  <div class="relative">
+                    <img src="public/img/blogPics/blog7.jpeg" alt=""
+                      class="inline-block h-48 w-full rounded-md object-cover" />
 
-                    </div>
-                    <div class="flex w-full flex-col gap-5">
+                  </div>
+                  <div class="flex w-full flex-col gap-5">
 
-                      <p class="font-bold">Is News Sentiment Still Adding Alpha?</p>
-                      <!-- Divider -->
-                      <div class="h-px w-full bg-black"></div>
-                      <div class="flex items-center">
+                    <p class="font-bold">What to do before machine learning?</p>
+                    <!-- Divider -->
+                    <div class="h-px w-full bg-black"></div>
+                    <div class="flex items-center">
 
-                        <div class="flex flex-col md:flex-row md:items-center">
-                          <p class="text-sm font-medium text-gray-500">blog post on
-                            epchan.blogspot.com on our News Sentiment research.</p>
-                        </div>
+                      <div class="flex flex-col md:flex-row md:items-center">
+                        <p class="text-sm font-medium text-gray-500">Quantopian webinar,
+                          October 2018. (Video.)</p>
                       </div>
                     </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
-                    <div class="relative">
-                      <img src="public/img/blogPics/blog7.jpeg" alt=""
-                        class="inline-block h-48 w-full rounded-md object-cover" />
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
+                  <div class="relative">
+                    <img src="public/img/blogPics/blog8.jpg" alt=""
+                      class="inline-block h-48 w-full rounded-md object-cover" />
 
-                    </div>
-                    <div class="flex w-full flex-col gap-5">
+                  </div>
+                  <div class="flex w-full flex-col gap-5">
 
-                      <p class="font-bold">What to do before machine learning?</p>
-                      <!-- Divider -->
-                      <div class="h-px w-full bg-black"></div>
-                      <div class="flex items-center">
+                    <p class="font-bold">Why features importance should only be computed in
+                      validation set</p>
+                    <!-- Divider -->
+                    <div class="h-px w-full bg-black"></div>
+                    <div class="flex items-center">
 
-                        <div class="flex flex-col md:flex-row md:items-center">
-                          <p class="text-sm font-medium text-gray-500">Quantopian webinar,
-                            October 2018. (Video.)</p>
-                        </div>
+                      <div class="flex flex-col md:flex-row md:items-center">
+                        <p class="text-sm font-medium text-gray-500">an open source kernel
+                          in Kaggle Two-Sigma competition.</p>
                       </div>
                     </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
-                    <div class="relative">
-                      <img src="public/img/blogPics/blog8.jpg" alt=""
-                        class="inline-block h-48 w-full rounded-md object-cover" />
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
+                  <div class="relative">
+                    <img src="public/img/blogPics/blog9.jpg" alt=""
+                      class="inline-block h-48 w-full rounded-md object-cover" />
 
-                    </div>
-                    <div class="flex w-full flex-col gap-5">
+                  </div>
+                  <div class="flex w-full flex-col gap-5">
 
-                      <p class="font-bold">Why features importance should only be computed in
-                        validation set</p>
-                      <!-- Divider -->
-                      <div class="h-px w-full bg-black"></div>
-                      <div class="flex items-center">
+                    <p class="font-bold">FX Order Flow as a Predictor”</p>
+                    <!-- Divider -->
+                    <div class="h-px w-full bg-black"></div>
+                    <div class="flex items-center">
 
-                        <div class="flex flex-col md:flex-row md:items-center">
-                          <p class="text-sm font-medium text-gray-500">an open source kernel
-                            in Kaggle Two-Sigma competition.</p>
-                        </div>
+                      <div class="flex flex-col md:flex-row md:items-center">
+                        <p class="text-sm font-medium text-gray-500">at Friedberg Mercantile
+                          Group event in Toronto, May 2018.</p>
                       </div>
                     </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
-                    <div class="relative">
-                      <img src="public/img/blogPics/blog9.jpg" alt=""
-                        class="inline-block h-48 w-full rounded-md object-cover" />
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
+                  <div class="relative">
+                    <img src="public/img/blogPics/blog10.jpg" alt=""
+                      class="inline-block h-48 w-full rounded-md object-cover" />
 
-                    </div>
-                    <div class="flex w-full flex-col gap-5">
+                  </div>
+                  <div class="flex w-full flex-col gap-5">
 
-                      <p class="font-bold">FX Order Flow as a Predictor”</p>
-                      <!-- Divider -->
-                      <div class="h-px w-full bg-black"></div>
-                      <div class="flex items-center">
+                    <p class="font-bold">Optimizing Trading Strategies Without Overfitting</p>
+                    <!-- Divider -->
+                    <div class="h-px w-full bg-black"></div>
+                    <div class="flex items-center">
 
-                        <div class="flex flex-col md:flex-row md:items-center">
-                          <p class="text-sm font-medium text-gray-500">at Friedberg Mercantile
-                            Group event in Toronto, May 2018.</p>
-                        </div>
+                      <div class="flex flex-col md:flex-row md:items-center">
+                        <p class="text-sm font-medium text-gray-500">keynote speech at
+                          QuantCon, New York, April 2018.</p>
                       </div>
                     </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
-                    <div class="relative">
-                      <img src="public/img/blogPics/blog10.jpg" alt=""
-                        class="inline-block h-48 w-full rounded-md object-cover" />
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
+                  <div class="relative">
+                    <img src="public/img/blogPics/blog11.jpg" alt=""
+                      class="inline-block h-48 w-full rounded-md object-cover" />
 
-                    </div>
-                    <div class="flex w-full flex-col gap-5">
+                  </div>
+                  <div class="flex w-full flex-col gap-5">
 
-                      <p class="font-bold">Optimizing Trading Strategies Without Overfitting</p>
-                      <!-- Divider -->
-                      <div class="h-px w-full bg-black"></div>
-                      <div class="flex items-center">
+                    <p class="font-bold">Applying machine learning techniques to everyday
+                      strategies</p>
+                    <!-- Divider -->
+                    <div class="h-px w-full bg-black"></div>
+                    <div class="flex items-center">
 
-                        <div class="flex flex-col md:flex-row md:items-center">
-                          <p class="text-sm font-medium text-gray-500">keynote speech at
-                            QuantCon, New York, April 2018.</p>
-                        </div>
+                      <div class="flex flex-col md:flex-row md:items-center">
+                        <p class="text-sm font-medium text-gray-500">at Grupo L&S
+                          conference, Brazil, November 2017.</p>
                       </div>
                     </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
-                    <div class="relative">
-                      <img src="public/img/blogPics/blog11.jpg" alt=""
-                        class="inline-block h-48 w-full rounded-md object-cover" />
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
+                  <div class="relative">
+                    <img src="public/img/blogPics/blog12.jpg" alt=""
+                      class="inline-block h-48 w-full rounded-md object-cover" />
 
-                    </div>
-                    <div class="flex w-full flex-col gap-5">
+                  </div>
+                  <div class="flex w-full flex-col gap-5">
 
-                      <p class="font-bold">Applying machine learning techniques to everyday
-                        strategies</p>
-                      <!-- Divider -->
-                      <div class="h-px w-full bg-black"></div>
-                      <div class="flex items-center">
+                    <p class="font-bold">Enhancing Statistical Significance of Backtests</p>
+                    <!-- Divider -->
+                    <div class="h-px w-full bg-black"></div>
+                    <div class="flex items-center">
 
-                        <div class="flex flex-col md:flex-row md:items-center">
-                          <p class="text-sm font-medium text-gray-500">at Grupo L&S
-                            conference, Brazil, November 2017.</p>
-                        </div>
+                      <div class="flex flex-col md:flex-row md:items-center">
+                        <p class="text-sm font-medium text-gray-500">at QuantCon, New York,
+                          April 2017.</p>
                       </div>
                     </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
-                    <div class="relative">
-                      <img src="public/img/blogPics/blog12.jpg" alt=""
-                        class="inline-block h-48 w-full rounded-md object-cover" />
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
+                  <div class="relative">
+                    <img src="public/img/blogPics/blog13.jpg" alt=""
+                      class="inline-block h-48 w-full rounded-md object-cover" />
 
-                    </div>
-                    <div class="flex w-full flex-col gap-5">
+                  </div>
+                  <div class="flex w-full flex-col gap-5">
 
-                      <p class="font-bold">Enhancing Statistical Significance of Backtests</p>
-                      <!-- Divider -->
-                      <div class="h-px w-full bg-black"></div>
-                      <div class="flex items-center">
+                    <p class="font-bold">The Peculiarity of Volatility</p>
+                    <!-- Divider -->
+                    <div class="h-px w-full bg-black"></div>
+                    <div class="flex items-center">
 
-                        <div class="flex flex-col md:flex-row md:items-center">
-                          <p class="text-sm font-medium text-gray-500">at QuantCon, New York,
-                            April 2017.</p>
-                        </div>
+                      <div class="flex flex-col md:flex-row md:items-center">
+                        <p class="text-sm font-medium text-gray-500">at QuantCon, New York,
+                          April 2016.</p>
                       </div>
                     </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
-                    <div class="relative">
-                      <img src="public/img/blogPics/blog13.jpg" alt=""
-                        class="inline-block h-48 w-full rounded-md object-cover" />
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
+                  <div class="relative">
+                    <img src="public/img/blogPics/blog14.jpg" alt=""
+                      class="inline-block h-48 w-full rounded-md object-cover" />
 
-                    </div>
-                    <div class="flex w-full flex-col gap-5">
+                  </div>
+                  <div class="flex w-full flex-col gap-5">
 
-                      <p class="font-bold">The Peculiarity of Volatility</p>
-                      <!-- Divider -->
-                      <div class="h-px w-full bg-black"></div>
-                      <div class="flex items-center">
+                    <p class="font-bold">Optimal Order Types</p>
+                    <!-- Divider -->
+                    <div class="h-px w-full bg-black"></div>
+                    <div class="flex items-center">
 
-                        <div class="flex flex-col md:flex-row md:items-center">
-                          <p class="text-sm font-medium text-gray-500">at QuantCon, New York,
-                            April 2016.</p>
-                        </div>
+                      <div class="flex flex-col md:flex-row md:items-center">
+                        <p class="text-sm font-medium text-gray-500">at Market
+                          Microstructure, Liquidity and Automated Trading conference,
+                          London, July 2015.</p>
                       </div>
                     </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
-                    <div class="relative">
-                      <img src="public/img/blogPics/blog14.jpg" alt=""
-                        class="inline-block h-48 w-full rounded-md object-cover" />
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
+                  <div class="relative">
+                    <img src="public/img/blogPics/blog15.jpg" alt=""
+                      class="inline-block h-48 w-full rounded-md object-cover" />
 
-                    </div>
-                    <div class="flex w-full flex-col gap-5">
+                  </div>
+                  <div class="flex w-full flex-col gap-5">
 
-                      <p class="font-bold">Optimal Order Types</p>
-                      <!-- Divider -->
-                      <div class="h-px w-full bg-black"></div>
-                      <div class="flex items-center">
+                    <p class="font-bold">Beware of Low Frequency Data</p>
+                    <!-- Divider -->
+                    <div class="h-px w-full bg-black"></div>
+                    <div class="flex items-center">
 
-                        <div class="flex flex-col md:flex-row md:items-center">
-                          <p class="text-sm font-medium text-gray-500">at Market
-                            Microstructure, Liquidity and Automated Trading conference,
-                            London, July 2015.</p>
-                        </div>
+                      <div class="flex flex-col md:flex-row md:items-center">
+                        <p class="text-sm font-medium text-gray-500">at QuantCon, New York,
+                          March 2015.</p>
                       </div>
                     </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
-                    <div class="relative">
-                      <img src="public/img/blogPics/blog15.jpg" alt=""
-                        class="inline-block h-48 w-full rounded-md object-cover" />
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
+                  <div class="relative">
+                    <img src="public/img/blogPics/blog16.jpg" alt=""
+                      class="inline-block h-48 w-full rounded-md object-cover" />
 
-                    </div>
-                    <div class="flex w-full flex-col gap-5">
+                  </div>
+                  <div class="flex w-full flex-col gap-5">
 
-                      <p class="font-bold">Beware of Low Frequency Data</p>
-                      <!-- Divider -->
-                      <div class="h-px w-full bg-black"></div>
-                      <div class="flex items-center">
+                    <p class="font-bold">Factor Models in Practice</p>
+                    <!-- Divider -->
+                    <div class="h-px w-full bg-black"></div>
+                    <div class="flex items-center">
 
-                        <div class="flex flex-col md:flex-row md:items-center">
-                          <p class="text-sm font-medium text-gray-500">at QuantCon, New York,
-                            March 2015.</p>
-                        </div>
+                      <div class="flex flex-col md:flex-row md:items-center">
+                        <p class="text-sm font-medium text-gray-500">at Society of Technical
+                          Analysts, London, Oct 2014.</p>
                       </div>
                     </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
-                    <div class="relative">
-                      <img src="public/img/blogPics/blog16.jpg" alt=""
-                        class="inline-block h-48 w-full rounded-md object-cover" />
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
+                  <div class="relative">
+                    <img src="public/img/blogPics/blog17.jpg" alt=""
+                      class="inline-block h-48 w-full rounded-md object-cover" />
 
-                    </div>
-                    <div class="flex w-full flex-col gap-5">
+                  </div>
+                  <div class="flex w-full flex-col gap-5">
 
-                      <p class="font-bold">Factor Models in Practice</p>
-                      <!-- Divider -->
-                      <div class="h-px w-full bg-black"></div>
-                      <div class="flex items-center">
+                    <p class="font-bold">Backtesting and Its Pitfalls</p>
+                    <!-- Divider -->
+                    <div class="h-px w-full bg-black"></div>
+                    <div class="flex items-center">
 
-                        <div class="flex flex-col md:flex-row md:items-center">
-                          <p class="text-sm font-medium text-gray-500">at Society of Technical
-                            Analysts, London, Oct 2014.</p>
-                        </div>
+                      <div class="flex flex-col md:flex-row md:items-center">
+                        <p class="text-sm font-medium text-gray-500">Market Technician
+                          Association meeting, London, Apr 2013.</p>
                       </div>
                     </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
-                    <div class="relative">
-                      <img src="public/img/blogPics/blog17.jpg" alt=""
-                        class="inline-block h-48 w-full rounded-md object-cover" />
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
+                  <div class="relative">
+                    <img src="public/img/blogPics/blog19.jpg" alt=""
+                      class="inline-block h-48 w-full rounded-md object-cover" />
 
-                    </div>
-                    <div class="flex w-full flex-col gap-5">
+                  </div>
+                  <div class="flex w-full flex-col gap-5">
 
-                      <p class="font-bold">Backtesting and Its Pitfalls</p>
-                      <!-- Divider -->
-                      <div class="h-px w-full bg-black"></div>
-                      <div class="flex items-center">
+                    <p class="font-bold">How to Succeed in the Quant Trading Business</p>
+                    <!-- Divider -->
+                    <div class="h-px w-full bg-black"></div>
+                    <div class="flex items-center">
 
-                        <div class="flex flex-col md:flex-row md:items-center">
-                          <p class="text-sm font-medium text-gray-500">Market Technician
-                            Association meeting, London, Apr 2013.</p>
-                        </div>
+                      <div class="flex flex-col md:flex-row md:items-center">
+                        <p class="text-sm font-medium text-gray-500">York University
+                          Schulich School of Business Professional Seminar Series.
+                          January, 2013.</p>
                       </div>
                     </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
-                    <div class="relative">
-                      <img src="public/img/blogPics/blog19.jpg" alt=""
-                        class="inline-block h-48 w-full rounded-md object-cover" />
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
+                  <div class="relative">
+                    <img src="public/img/blogPics/blog18.jpg" alt=""
+                      class="inline-block h-48 w-full rounded-md object-cover" />
 
-                    </div>
-                    <div class="flex w-full flex-col gap-5">
+                  </div>
+                  <div class="flex w-full flex-col gap-5">
 
-                      <p class="font-bold">How to Succeed in the Quant Trading Business</p>
-                      <!-- Divider -->
-                      <div class="h-px w-full bg-black"></div>
-                      <div class="flex items-center">
+                    <p class="font-bold">Discovering Risk Indicators in the FX Markets</p>
+                    <!-- Divider -->
+                    <div class="h-px w-full bg-black"></div>
+                    <div class="flex items-center">
 
-                        <div class="flex flex-col md:flex-row md:items-center">
-                          <p class="text-sm font-medium text-gray-500">York University
-                            Schulich School of Business Professional Seminar Series.
-                            January, 2013.</p>
-                        </div>
+                      <div class="flex flex-col md:flex-row md:items-center">
+                        <p class="text-sm font-medium text-gray-500">at Quant Invest Canada
+                          conference in Toronto, Canada, October 2012.</p>
                       </div>
                     </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#" class="flex flex-col gap-4 rounded-md bg-gray-100 px-4 py-8 md:p-4 h-[450px]">
-                    <div class="relative">
-                      <img src="public/img/blogPics/blog18.jpg" alt=""
-                        class="inline-block h-48 w-full rounded-md object-cover" />
-
-                    </div>
-                    <div class="flex w-full flex-col gap-5">
-
-                      <p class="font-bold">Discovering Risk Indicators in the FX Markets</p>
-                      <!-- Divider -->
-                      <div class="h-px w-full bg-black"></div>
-                      <div class="flex items-center">
-
-                        <div class="flex flex-col md:flex-row md:items-center">
-                          <p class="text-sm font-medium text-gray-500">at Quant Invest Canada
-                            conference in Toronto, Canada, October 2012.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
+                  </div>
+                </a>
               </div>
             </div>
-          </section>
-        </ScrollTransition>
+          </div>
+        </section>
+
 
 
 
