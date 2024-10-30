@@ -20,7 +20,7 @@
             <div class="w-full ">
 
 
-                <div class="relative bg-gray-50">
+                <div class="relative ">
                     <ScrollTransition>
                         <section class="relative py-12 sm:py-16 lg:pt-20 lg:pb-36">
                             <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
