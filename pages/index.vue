@@ -38,7 +38,6 @@
       </div>
 
       <div class="xl:hidden col-start-1 col-span-1 flex justify-center items-center">
-
         <div class="relative ">
           <video autoplay loop muted class="w-full hidden md:block">
             <source src="public/img/finance.mp4" type="video/webm" />
@@ -75,20 +74,16 @@
         </div>
       </div>
 
-
-
     </div>
     <div class="w-full grid grid-cols-1 lg:grid-cols-3">
       <div class="col-start-1 col-span-1 flex items-center justify-center ">
         <img src="public/img/ernie_2.jpg" class="object-cover w-full">
-
       </div>
       <div class="col-start-2 col-span-3 flex justify-start mt-20 md:mt-0">
         <section class="bg-gray-800 text-white ">
           <div class="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
             <div class="max-w-xl">
               <h2 class="text-6xl font-bold ">Dr Ernest P Chan</h2>
-
               <p class="mt-4 text-gray-300 text-2xl">
                 Ernest P. Chan, is an <a href="https://predictnow.ai/"
                   class="text-blue-600 hover:text-blue-800 underline hover:no-underline font-medium transition duration-300 ease-in-out">expert</a>
@@ -114,7 +109,6 @@
 
                 <div>
                   <h2 class="text-xl font-bold">Chief Scientific Officer</h2>
-
                   <p class="mt-1 text-md text-gray-300">
                     founded and serves as Chief Scientific Officer of <a href="https://predictnow.ai/"
                       class="text-blue-600 hover:text-blue-800 underline hover:no-underline font-medium transition duration-300 ease-in-out">Predictnow.ai</a>
@@ -141,7 +135,6 @@
 
                 <div>
                   <h2 class="text-xl font-bold">Chairman</h2>
-
                   <p class="mt-1 text-md text-gray-300">
                     He founded and serves as non-executive chairman of <a
                       class="text-blue-600 hover:text-blue-800 underline hover:no-underline font-medium transition duration-300 ease-in-out"
@@ -167,7 +160,6 @@
 
                 <div>
                   <h2 class="text-xl font-bold">Quantitative Model Specialist</h2>
-
                   <p class="mt-1 text-md text-gray-300">
                     Dr. Chan has built and traded numerous
                     quantitative models for investment banks and hedge funds in the past.
@@ -208,13 +200,11 @@
     </div>
 
     <div class="w-full ">
-
       <section>
         <div class="mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
           <header class="text-center">
             <h2 class="text-6xl font-bold text-white ">Our top rated resources</h2>
           </header>
-
           <ul class="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4 lg:grid-cols-5">
             <li>
               <NuxtLink to="/books" class="group block overflow-hidden ">
@@ -248,8 +238,6 @@
                   class="h-[350px] w-full object-cover transition duration-500 hover:scale-105 sm:h-[450px]" />
               </NuxtLink>
             </li>
-
-
           </ul>
         </div>
       </section>
@@ -258,7 +246,6 @@
     <div class="w-full">
       <Footer></Footer>
     </div>
-
   </div>
 </template>
 

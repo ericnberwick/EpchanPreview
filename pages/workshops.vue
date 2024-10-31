@@ -17,97 +17,23 @@
 
       <LoadingCard v-if="isLoading" message="Loading workshops..."></LoadingCard>
 
-      <Transition name="fade">
-        <div v-if="!isLoading" class="mt-24 mx-8">
-          <div class="grid gap-8 lg:grid-cols-3 grid-cols-1 ">
-            <div v-for="course in courses" :key="course.sys.id">
+
+      <div v-if="!isLoading" class="mt-24 mx-8">
+        <div class="grid gap-8 lg:grid-cols-3 grid-cols-1 ">
+          <div v-for="course in courses" :key="course.sys.id">
+            <ScrollTransition>
               <CourseCard :course="course" class="border-4-border-red-900" />
-            </div>
-
-
+            </ScrollTransition>
           </div>
 
-        </div>
-      </Transition>
-      <BonusCourseCard class="mt-10 "></BonusCourseCard>
 
+        </div>
+
+      </div>
+      <BonusCourseCard class="mt-10 "></BonusCourseCard>
       <div class="mt-10">
         <Review></Review>
       </div>
-
-
-      <!-- <div class="mt-8 flex justify-center">
-        <div class=" w-1/2  flex flex-col">
-          <div class=" flex justify-center mt-6">
-            <h2 class="text-white">Praise for our workshops</h2>
-          </div>
-          <div class=" flex justify-center mt-6">
-            <p class="text-white"><i>“An excellent course by a great teacher. Ernie clearly explained and applied the
-                different
-                areas of Artificial Intelligence, provided invaluable insights as to their relative merits, and gave me
-                the
-                confidence to implement them in my own trading.”</i> – Dr Nikhil Shenai (Ph.D., Imperial College, BA,
-              University
-              of
-              Cambridge), Founder of E K Technologies (Quantitative Trading & Development)</p>
-          </div>
-
-          <div class=" flex justify-center mt-6">
-            <p class="text-white"><i>“While being familiar with the subject I truly enjoyed the material covered and the
-                [options] course has certainly provided food for thought.”</i> – Laurent Hoffmann, Ph.D., Former Senior
-              Quantitative
-              Analyst, Structured Credit Trading, at Depfa Bank Asset Management Europe & RoW.</p>
-          </div>
-
-          <div class=" flex justify-center mt-6">
-            <p class="text-white"><i>“…thank you again for the Momentum Strategies training course this week. It was
-                very
-                beneficial. I found your explanations of the concepts very clear and the examples well developed. I like
-                the
-                rigorous approach that you take to strategy evaluation.”</i> – Andrew B. (senior executive at a major
-              Canadian
-              bank.)</p>
-          </div>
-
-          <div class=" flex justify-content mt-6">
-            <p class="text-white"><i>“…I have been very impressed with Ernie’s past workshops…”</i> – Stephen Hope,
-              Former
-              Head
-              of
-              Fixed Income Quantitative Trading Strategies, BNP Paribas.</p>
-          </div>
-
-          <div class=" flex justify-center mt-6">
-            <p class="text-white"><i>“Ernie’s workshop offers particularly helpful insights in implementing profitable
-                trading
-                strategies and that’s beyond his books’ content. And he is one of the most patient and giving
-                instructors
-                I
-                ever
-                met“</i> – K.W. Fung, CQF, Founder of Quants Investment</p>
-          </div>
-
-          <div class=" flex justify-center mt-6">
-            <p class="text-white"><i>“These workshops have provided me with enough familiarity and confidence to tackle
-                the
-                latest research. Just the segment on intermarket sweep orders in the MFT course was worth the price of
-                admission
-                to all three workshops I went to.“</i> – Cedric Yau</p>
-          </div>
-
-          <div class=" flex justify-center mt-6">
-            <p class="text-white"><i>“Dr. Chan brings a practical approach to a difficult topic that helps students not
-                only
-                understand the topic at hand but why the topic is important in the applied field. I can’t speak highly
-                enough
-                about the course and instruction…”</i> – Anonymous student evaluation</p>
-          </div>
-
-          <div class=" flex justify-content mt-6">
-            <p class="text-white"><i>“Dr. Chan … is a phenomenal instructor…”</i> – Anonymous student evaluation</p>
-          </div>
-        </div>
-      </div> -->
       <Footer class="mt-20"></Footer>
     </section>
   </div>
