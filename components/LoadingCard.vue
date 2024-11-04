@@ -31,7 +31,7 @@ import { defineProps } from 'vue'
 
 defineProps({
     message: {
-        type: Object,
+        type: String,
         required: true
     }
 })
