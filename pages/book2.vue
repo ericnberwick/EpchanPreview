@@ -48,16 +48,11 @@
                   {{ file }}
                 </a>
               </div>
-
-
             </div>
-
-
           </li>
         </ul>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -88,14 +83,7 @@ export default {
   color: #444444;
 }
 
-
-
-
-
-
 a:hover {
   color: #0056b3;
-  /* Darker shade of blue on hover */
-
 }
 </style>

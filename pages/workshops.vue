@@ -17,7 +17,6 @@
 
       <LoadingCard v-if="isLoading" message="Loading workshops..."></LoadingCard>
 
-
       <div v-if="!isLoading" class="mt-24 mx-8">
         <div class="grid gap-8 lg:grid-cols-3 grid-cols-1 ">
           <div v-for="course in courses" :key="course.sys.id">
@@ -25,10 +24,7 @@
               <CourseCard :course="course" class="border-4-border-red-900" />
             </ScrollTransition>
           </div>
-
-
         </div>
-
       </div>
       <BonusCourseCard class="mt-10 "></BonusCourseCard>
       <div class="mt-10">
@@ -37,7 +33,6 @@
       <Footer class="mt-20"></Footer>
     </section>
   </div>
-
 </template>
 
 <script setup>
@@ -47,7 +42,6 @@ import BonusCourseCard from "../components/BonusCourseCard.vue";
 import LoadingCard from "../components/LoadingCard.vue";
 
 const config = useRuntimeConfig();
-// Define a ref to hold fetched data
 const courses = ref([]);
 const spaceName = config.public.CONTENTFUL_SPACE_ID;
 const accessTokenName = config.public.CONTENTFUL_ACCESS_KEY;
@@ -63,9 +57,8 @@ async function fetchEntries() {
   });
 
   const res = await client.getEntries({
-    content_type: "courseCard", // Ensure this matches the actual ID in Contentful
+    content_type: "courseCard",
   });
-  // Assign data to reviews ref
   courses.value = res.items;
 }
 

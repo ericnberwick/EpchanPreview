@@ -28,7 +28,6 @@
           </div>
         </div>
 
-
         <ul class=" grid grid-cols-2 lg:grid-cols-5 gap-4">
           <li class="flex flex-col items-center border-2 border-white" v-for="file in files" :key="file">
             <div class="grid grid-cols-2 w-full">
@@ -49,19 +48,13 @@
                   {{ file }}
                 </a>
               </div>
-
-
             </div>
-
-
           </li>
         </ul>
-
       </div>
     </div>
   </div>
 </template>
-
 
 <script>
 export default {
@@ -91,8 +84,6 @@ export default {
   color: #444444;
 }
 
-
-
 h2 {
   margin-bottom: 20px;
   font-size: 20px;
@@ -109,14 +100,10 @@ p {
 
 a {
   color: white;
-  /* Initial Color */
   transition: color 0.2s ease-in-out, font-size 0.2s ease-in-out;
-  /* Smooth transition for color and font-size */
 }
 
 a:hover {
   color: #0056b3;
-  /* Darker shade of blue on hover */
-
 }
 </style>

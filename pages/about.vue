@@ -1,6 +1,7 @@
 <template>
   <div class="bg-gray-800  h-screen">
     <Navbar page="about" />
+
     <div class="bg-gray-800">
       <div class="px-8 pt-24  ">
         <div class="container mx-auto text-center">
@@ -12,10 +13,6 @@
       </div>
 
       <div class="grid grid-cols-5">
-
-
-        <!-- Container -->
-
         <div class="w-full col-span-5">
           <ScrollTransition>
             <div class="container mx-auto">
@@ -26,7 +23,6 @@
                 <div class="flex bg-gray-100 p-10">
                   <div class="mb-auto mt-auto max-w-2xl">
                     <h1 class="text-3xl ">Dr Ernest P Chan</h1>
-
                     <p>Dr. Ernest P. Chan, founder, PredictNow.ai Inc. Ernie’s
                       career since 1994 has been focusing on the development of statistical models and advanced computer
                       algorithms to find patterns and trends in large quantities of data. He has applied his expertise
@@ -64,8 +60,6 @@
                       <br />
                       <br />
 
-
-
                       Ernie holds a Bachelor of Science degree from University of Toronto in 1988, a Master of Science
                       (1991) and a Doctor of Philosophy (1994) degree in theoretical physics from Cornell University.
                     </p>
@@ -79,7 +73,6 @@
           </ScrollTransition>
         </div>
 
-
         <div class="hidden xl:block col-start-2 col-span-3 w-full ">
           <ScrollTransition>
             <AnotherTimeline></AnotherTimeline>
@@ -91,19 +84,13 @@
             <Timeline></Timeline>
           </ScrollTransition>
         </div>
-
       </div>
 
       <div class="mt-72">
         <Footer></Footer>
       </div>
     </div>
-
-
-
   </div>
-
-
 </template>
 
 <script setup>
@@ -132,7 +119,7 @@ async function fetchEntries() {
   });
 
   const res = await client.getEntries({
-    content_type: "aboutProfile", // Ensure this matches the actual ID in Contentful
+    content_type: "aboutProfile",
   });
   profiles.value = res.items;
 }
