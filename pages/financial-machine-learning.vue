@@ -58,12 +58,12 @@
                 <div class="grid grid-cols-1 gap-y-8 lg:items-center lg:grid-cols-2 sm:gap-y-20 xl:grid-cols-5 ">
                   <div class="text-center xl:col-span-2   flex justify-center items-center">
                     <div>
-                      <img class=" max-w-sm h-auto rounded-xl " src="public/img/scrub1.jpg" alt="Data Scrubbing" />
+                      <img class=" max-w-md h-auto rounded-xl " src="public/img/scrub1.jpg" alt="Data Scrubbing" />
                     </div>
 
                   </div>
                   <div class="xl:col-span-3">
-                    <div class="max-w-sm  sm:max-w-md md:max-w-full">
+                    <div class="max-w-sm mx-auto sm:max-w-md md:max-w-full">
                       <h1
                         class="text-4xl font-bold leading-tight text-white sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">
                         Financial data scrubbing</h1>
@@ -102,10 +102,10 @@
           </ScrollTransition>
           <ScrollTransition>
             <section class="relative py-12 sm:py-16 lg:pt-20 lg:pb-36">
-              <div class="sm:px-6 lg:px-8 max-w-7xl">
+              <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div class="grid grid-cols-1 gap-y-8 lg:items-center lg:grid-cols-2 sm:gap-y-20 xl:grid-cols-5">
                   <div class="text-center xl:col-span-2 lg:text-left md:px-16 lg:px-0">
-                    <div class="max-w-sm  sm:max-w-md md:max-w-full">
+                    <div class="max-w-sm mx-auto sm:max-w-md md:max-w-full">
                       <h1
                         class="text-4xl font-bold leading-tight text-white sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">
                         Features engineering and selection</h1>
@@ -129,7 +129,7 @@
                   </div>
                   <div class="xl:col-span-3 flex justify-center items-center">
                     <div>
-                      <img class=" max-w-sm h-auto rounded-xl " src="public/img/data-scrubbing.jpg"
+                      <img class="max-w-xs md:max-w-md h-auto rounded-xl " src="public/img/data-scrubbing.jpg"
                         alt="Data Scrubbing" />
                     </div>
                   </div>
@@ -139,17 +139,17 @@
           </ScrollTransition>
           <ScrollTransition>
             <section class="relative py-12 sm:py-16 lg:pt-20 lg:pb-36">
-              <div class="px-4  sm:px-6 lg:px-8 max-w-7xl">
+              <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div class="grid grid-cols-1 gap-y-8 lg:items-center lg:grid-cols-2 sm:gap-y-20 xl:grid-cols-5">
                   <div class="text-center xl:col-span-2 lg:text-left md:px-16 lg:px-0 flex justify-center items-center">
                     <div>
-                      <img class=" max-w-sm h-auto rounded-xl " src="public/img/predict-targets.jpg"
+                      <img class="max-w-xs md:max-w-md h-auto rounded-xl " src="public/img/predict-targets.jpg"
                         alt="Data Scrubbing" />
                     </div>
 
                   </div>
                   <div class="xl:col-span-3">
-                    <div class="max-w-sm  sm:max-w-md md:max-w-full">
+                    <div class="max-w-sm mx-auto sm:max-w-md md:max-w-full">
                       <h1
                         class="text-4xl font-bold leading-tight text-white sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">
                         Predicting “non-reflexive”* targets</h1>
@@ -183,10 +183,10 @@
           </ScrollTransition>
           <ScrollTransition>
             <section class="relative py-12 sm:py-16 lg:pt-20 lg:pb-36">
-              <div class="px-4  sm:px-6 lg:px-8 max-w-7xl">
+              <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div class="grid grid-cols-1 gap-y-8 lg:items-center lg:grid-cols-2 sm:gap-y-20 xl:grid-cols-5">
                   <div class="text-center xl:col-span-2 lg:text-left md:px-16 lg:px-0">
-                    <div class="max-w-sm sm:max-w-md md:max-w-full">
+                    <div class="max-w-sm mx-auto sm:max-w-md md:max-w-full">
                       <h1
                         class="text-4xl font-bold leading-tight text-white sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">
                         Capital allocation and risk management via “meta-labelling”*</h1>
@@ -217,8 +217,8 @@
                   </div>
                   <div class="xl:col-span-3 flex justify-center items-center">
                     <div>
-                      <img class=" max-w-xs sm:max-w-sm h-auto rounded-xl " src="public/img/capmanagement.jpeg"
-                        alt="Data Scrubbing" />
+                      <img class="max-w-xs md:max-w-sm xl:max-w-xl h-auto rounded-xl "
+                        src="public/img/capmanagement.jpeg" alt="Data Scrubbing" />
                     </div>
                   </div>
                 </div>
@@ -227,16 +227,16 @@
           </ScrollTransition>
           <ScrollTransition>
             <section class="relative py-12 sm:py-16 lg:pt-20 lg:pb-36">
-              <div class="px-4  sm:px-6 lg:px-8 max-w-7xl">
+              <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div class="grid grid-cols-1 gap-y-8 lg:items-center lg:grid-cols-2 sm:gap-y-20 xl:grid-cols-5">
                   <div class="text-center xl:col-span-2 lg:text-left md:px-16 lg:px-0 flex justify-center items-center">
                     <div>
-                      <img class=" max-w-sm h-auto rounded-xl " src="public/img/simulations.jpg" alt="Data Scrubbing" />
+                      <img class=" max-w-md h-auto rounded-xl " src="public/img/simulations.jpg" alt="Data Scrubbing" />
                     </div>
 
                   </div>
                   <div class="xl:col-span-3">
-                    <div class="max-w-sm sm:max-w-md md:max-w-full">
+                    <div class="max-w-sm mx-auto sm:max-w-md md:max-w-full">
                       <h1
                         class="text-4xl font-bold leading-tight text-white sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">
                         Market simulations for performance evaluation</h1>
@@ -309,7 +309,7 @@
 
         <section>
           <!-- Container -->
-          <div class="mt-20 w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
+          <div class="mt-20 mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
             <!-- Title -->
             <div class="mb-12 flex flex-col md:flex-row">
               <h1
