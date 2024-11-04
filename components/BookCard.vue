@@ -65,7 +65,6 @@ const props = defineProps({
 const praiseExists = ref(false);
 
 onMounted(() => {
-  console.log("yoo : ", props.review.fields.new)
   if (props.review.fields.praise) {
     praiseExists.value = true;
   } else {

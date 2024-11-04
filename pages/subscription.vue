@@ -69,7 +69,6 @@ export default {
     try {
       const response = await fetch('/img/subscription/files.json');
       this.files = await response.json();
-      console.log("file : ", this.files[1].split('.')[1])
     } catch (error) {
       console.error('Error fetching files:', error);
     } finally {

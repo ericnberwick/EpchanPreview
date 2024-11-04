@@ -72,10 +72,7 @@ const config = useRuntimeConfig();
 const paragraphs = ref([]);
 const spaceName = config.public.CONTENTFUL_SPACE_ID;
 const accessTokenName = config.public.CONTENTFUL_ACCESS_KEY;
-
 let client;
-
-
 
 async function fetchEntries() {
   const contentful = await import("contentful");
@@ -84,31 +81,21 @@ async function fetchEntries() {
     accessToken: accessTokenName,
   });
 
-
-
-
   const res = await client.getEntries({
     content_type: "financialMachineLearningParagraph", // Ensure this matches the actual ID in Contentful
   });
 
-
   paragraphs.value = res.items;
   sortedParagraphs.value = res.items.slice().sort((a, b) => a.fields.order - b.fields.order);
-
 
   const blogCards = await client.getEntries({
     content_type: "financialMachineLearningBlogCard",
   });
   blogs.value = blogCards.items;
-  console.log("blogs : ", blogCards)
-
-
 }
 
-// Fetch data on component mount
 onMounted(() => {
   fetchEntries();
   isLoading.value = false
-
 });
 </script>
