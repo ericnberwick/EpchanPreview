@@ -10,7 +10,6 @@
                                     class="text-4xl font-bold leading-tight text-white sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">
                                     {{
                                         paragraph.fields.title }}</h1>
-
                                 <div class="mt-8 lg:mt-12 lg:flex lg:items-center">
                                     <p class="mt-4 text-lg text-gray-200 lg:mt-0 lg:ml-4 font-pj">
                                         <RichTextRenderer :document="paragraph.fields.body" />
@@ -50,5 +49,4 @@ onMounted(() => {
         displayParagraph.value = true
     }
 })
-
 </script>

@@ -1,6 +1,4 @@
 <template>
-
-
     <section class="bg-gray-800">
         <div class="mx-auto max-w-screen-2xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
             <div class="md:flex md:items-end md:justify-between">
@@ -414,11 +412,8 @@
 
                 <blockquote class="flex h-full flex-col justify-center items-center bg-white p-6 shadow-sm sm:p-8">
                     <div>
-
-
                         <div class="mt-4">
                             <p class="text-4xl font-bold text-blue-600 ">Enroll Now</p>
-
                             <a href=" https://buy.stripe.com/fZe4ig3Gf1rsfN64gj">
                                 <button
                                     class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-2 px-4 rounded-lg border border-green-500 text-green-500 hover:opacity-75 focus:ring focus:ring-green-200 active:opacity-[0.85] block w-full mt-6"
@@ -426,11 +421,7 @@
                             </a>
                         </div>
                     </div>
-
-
                 </blockquote>
-
-
             </div>
         </div>
     </section>

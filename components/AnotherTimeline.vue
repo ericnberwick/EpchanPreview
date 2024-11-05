@@ -1,6 +1,4 @@
 <template>
-
-
     <div class="w-full flex justify-center mt-10">
         <ol class="flex justify-center">
             <li class="relative mb-6 sm:mb-0">
@@ -183,6 +181,5 @@
                 </div>
             </li>
         </ol>
-
     </div>
 </template>

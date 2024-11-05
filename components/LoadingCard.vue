@@ -19,10 +19,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
     </div>
 </template>
 
@@ -35,5 +31,4 @@ defineProps({
         required: true
     }
 })
-
 </script>

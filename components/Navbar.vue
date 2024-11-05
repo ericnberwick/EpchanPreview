@@ -10,20 +10,10 @@
               aria-controls="mobile-menu" aria-expanded="false">
               <span class="absolute -inset-0.5"></span>
               <span class="sr-only">Open main menu</span>
-              <!--
-            Icon when menu is closed.
-
-            Menu open: "hidden", Menu closed: "block"
-          -->
               <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                 aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
-              <!--
-            Icon when menu is open.
-
-            Menu open: "block", Menu closed: "hidden"
-          -->
               <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                 aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -64,7 +54,6 @@
                 <NuxtLink href="/contact"
                   :class="['rounded-md px-3 py-2 text-sm font-medium', page === 'email' ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white']">
                   Contact</NuxtLink>
-
               </div>
             </div>
           </div>
@@ -148,7 +137,7 @@ import { defineProps, ref, onMounted } from 'vue'
 
 const navbarPanelOpen = ref(false);
 
-const props = defineProps({
+defineProps({
   page: {
     type: String,
     required: true

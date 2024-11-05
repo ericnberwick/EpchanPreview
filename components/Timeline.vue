@@ -13,12 +13,6 @@
                 <h3 class="ml-8 flex items-center mb-1 text-lg text-white  font-bold">Founder and Chief Scientist,
                     PredictNow.ai
                 </h3>
-                <!-- <time class="ml-8 block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Jul 2020 -
-                Present · 4 yrs 4 mos</time>
-            <p class="ml-8 mb-4 tfont-medium text-gray-300 ">PredictNow.ai is a financial machine
-                learning SaaS that lets investors and traders compute the probability of profit of their next
-                investment.</p> -->
-
             </li>
             <li class="mb-10 ms-6 timeline-item animate-reveal" :style="{ animationDelay: '0ms' }" ref="item2">
                 <span
@@ -31,10 +25,6 @@
                 </span>
                 <h3 class="ml-8 mb-1 text-lg text-white  font-bold">Non-executive chairman and founder, QTS
                     Capital Management</h3>
-                <!-- <time class="ml-8 block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Jun 2011 -
-                Present · 13 yrs 5 mos</time>
-            <p class="ml-8 font-medium text-gray-300 ">QTS Capital Management, LLC. is a CTA and
-                CPO which manages QTS Partners, L.P</p> -->
             </li>
             <li class="mb-10 ms-6 timeline-item animate-reveal" :style="{ animationDelay: '0ms' }" ref="item3">
                 <span
@@ -46,10 +36,6 @@
                     </svg>
                 </span>
                 <h3 class="ml-8 mb-1 text-lg text-white  font-bold">Managing Member, EXP Capital Management, LLC</h3>
-                <!-- <time class="ml-8 block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Jul 2008 -
-                Dec
-                2010 · 2 yrs 6 mos</time>
-            <p class="ml-8 font-medium text-gray-300 ">Quantitative hedge fund based in Chicago, IL.</p> -->
             </li>
             <li class="mb-10 ms-6 timeline-item animate-reveal" :style="{ animationDelay: '0ms' }" ref="item4">
                 <span
@@ -61,11 +47,6 @@
                     </svg>
                 </span>
                 <h3 class="ml-8  mb-1 text-lg text-white  font-bold">Senior Quantitative Analyst, Maple Securities</h3>
-                <!-- <time class="ml-8 block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Jul 2003 -
-                Sep
-                2005 · 2 yrs 3 mos</time>
-            <p class="ml-8 font-medium text-gray-300 ">Quantitative research, trading, portfolio management. Statistical
-                arbitrage.</p> -->
             </li>
             <li class="mb-10 ms-6 timeline-item animate-reveal" :style="{ animationDelay: '0ms' }" ref="item5">
                 <span
@@ -78,10 +59,6 @@
                 </span>
                 <h3 class="ml-8 mb-1 text-lg text-white  font-bold">Senior Quantitative Analyst, MANE Fund Management
                 </h3>
-                <!-- <time class="ml-8 block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2004 - 2005
-                · 1
-                yr</time>
-            <p class="ml-8 font-medium text-gray-300 "></p> -->
             </li>
             <li class="mb-10 ms-6 timeline-item animate-reveal" :style="{ animationDelay: '0ms' }" ref="item6">
                 <span
@@ -95,10 +72,6 @@
                 <h3 class="ml-8 mb-1 text-lg text-white  font-bold">Senior Research Strategist, Mapleridge Capital
                     Corporation
                 </h3>
-                <!-- <time class="ml-8 block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Jun 2002 -
-                Jan
-                2003 · 8 mos</time>
-            <p class="ml-8 font-medium text-gray-300 "></p> -->
             </li>
             <li class="mb-10 ms-6 timeline-item animate-reveal" :style="{ animationDelay: '0ms' }" ref="item7">
                 <span
@@ -111,10 +84,6 @@
                 </span>
                 <h3 class="ml-8 mb-1 text-lg text-white  font-bold">Millennium Partners
                 </h3>
-                <!-- <time class="ml-8 block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2003 - 2003
-                ·
-                Less than a year</time>
-            <p class="ml-8 font-medium text-gray-300 "></p> -->
             </li>
             <li class="mb-10 ms-6 timeline-item animate-reveal" :style="{ animationDelay: '0ms' }" ref="item8">
                 <span
@@ -128,10 +97,6 @@
                 <h3 class="ml-8 mb-1 text-lg text-white  font-bold">
                     Vice President, Credit Suisse
                 </h3>
-                <!-- <time class="ml-8 block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">May 1998 -
-                Dec
-                1999 · 1 yr 8 mos</time>
-            <p class="font-medium text-gray-300 "></p> -->
             </li>
             <li class="mb-10 ms-6 timeline-item animate-reveal" :style="{ animationDelay: '0ms' }" ref="item9">
                 <span
@@ -143,13 +108,8 @@
                     </svg>
                 </span>
                 <h3 class="ml-8 mb-1 text-lg text-white  font-bold">
-
                     Associate, Morgan Stanley
                 </h3>
-                <!-- <time class="ml-8 block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Jan 1997 -
-                Apr
-                1998 · 1 yr 4 mos</time>
-            <p class="ml-8 font-medium text-gray-300 ">Data Mining and Artificial Intelligence group</p> -->
             </li>
             <li class=" ms-6 timeline-item animate-reveal">
                 <span
@@ -164,14 +124,9 @@
 
                     Research Associate, IBM
                 </h3>
-                <!-- <time class="ml-8 block  text-sm font-normal leading-none text-gray-400 dark:text-gray-500">1994 - 1997 · 3
-                yrs</time> -->
-
             </li>
         </ol>
     </div>
-
-
 </template>
 
 <script setup>
@@ -186,8 +141,6 @@ const item6 = ref(null)
 const item7 = ref(null)
 const item8 = ref(null)
 const item9 = ref(null)
-
-// Add refs for additional items as needed
 
 onMounted(() => {
     const observer = new IntersectionObserver((entries) => {

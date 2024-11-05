@@ -24,12 +24,9 @@
           <p class="block antialiased text-white font-sans text-sm leading-normal font-normal text-inherit">
             {{ item.content[0].content[0].value }}</p>
         </li>
-
       </ul>
-
     </div>
     <div class="flex flex-col justify-between m-4">
-      <!-- Other content goes here -->
       <a :href="course.fields.stripeLink.content[0].content[0].value" class="mt-auto">
         <button
           class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-2 px-4 rounded-lg border border-green-500 text-green-500 hover:opacity-75 focus:ring focus:ring-green-200 active:opacity-[0.85] block w-full"

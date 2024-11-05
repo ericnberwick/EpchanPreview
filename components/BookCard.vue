@@ -5,7 +5,6 @@
         <div
           class="relative flex-col bg-clip-border rounded-xl bg-transparent text-gray-700 shadow-none grid gap-2 item grid-cols-1 lg:grid-cols-3 border-2 border-green-900">
           <div class=" relative bg-clip-border text-gray-700 m-0 overflow-hidden flex items-center justify-center">
-
             <a :href="review.fields.linkToBook" class="">
               <div class="relative  w-fit overflow-hidden">
                 <img :src="'https:' + review.fields.bookImage.fields.file.url"
@@ -17,9 +16,7 @@
                 </span>
               </div>
             </a>
-
           </div>
-
           <div
             class="p-6 px-2 sm:pr-6 sm:pl-4 text-white p-6 px-2 sm:pr-6 sm:pl-4 text-white col-start-1 lg:col-start-2 col-span-1 lg:col-span-2">
             <a :href="review.fields.linkToBook"
@@ -37,13 +34,10 @@
                 class="mt-8 block antialiased font-sans text-base leading-relaxed text-inherit font-normal !text-gray-500"
                 :document="review.fields.praise" :renderMark="renderMark" :renderNode="renderNode" />
             </div>
-
-
             <a :href="review.fields.linkToBook">
               <button
                 class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-2 px-4 rounded-lg border border-green-500 text-green-500 hover:opacity-75 focus:ring focus:ring-green-200 active:opacity-[0.85] block w-full mt-6"
                 type="button">buy now</button></a>
-
           </div>
         </div>
       </div>
@@ -85,44 +79,3 @@ const renderNode = {
   [BLOCKS.HEADING_2]: (node, next) => `<h2>${next(node.content)}</h2>`,
 }
 </script>
-
-<style>
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-
-h2 {
-  font-size: 2rem
-}
-
-/* Vanilla CSS for flip card */
-.card {
-  width: 100%;
-
-}
-
-.card__content {
-  transform-style: preserve-3d;
-}
-
-.card:hover .card__content {
-  transform: rotateY(.5turn);
-}
-
-.card__front,
-.card__back {
-  backface-visibility: hidden;
-}
-
-.card__back {
-  transform: rotateY(.5turn);
-}
-
-.rotate135 {
-  transform: rotate(135deg);
-}
-</style>
