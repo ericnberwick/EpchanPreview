@@ -19,8 +19,11 @@
                             </div>
                         </div>
                         <div class="xl:col-span-3">
-                            <img class="max-w-sm md:max-w-md xl:max-w-xl rounded-xl h-auto mx-auto scale-110 "
-                                :src="'https:' + paragraph.fields.image.fields.file.url" alt="" />
+                            <a :href="paragraph.fields.linkPicture"
+                                class="inline-block transform transition duration-300 ease-in-out hover:rotate-2 hover:-translate-y-1">
+                                <img class="max-w-sm md:max-w-md xl:max-w-xl rounded-xl h-auto mx-auto"
+                                    :src="'https:' + paragraph.fields.image.fields.file.url" alt="" />
+                            </a>
                         </div>
                     </div>
                 </div>

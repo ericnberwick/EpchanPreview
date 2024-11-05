@@ -10,7 +10,7 @@
                 <p class="text-white mb-4"> Contact ernest@epchan.com for further questions </p>
                 <a class="block lgw-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
                     href="/EP Chan Course Offerings.pdf" target="_blank" rel="noopener noreferrer">
-                    Learn More
+                    Download brochure
                 </a>
                 <NuxtLink
                     class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto mb-2"
@@ -44,4 +44,6 @@ defineProps({
         required: true
     }
 })
+
+
 </script>

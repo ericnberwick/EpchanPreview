@@ -88,7 +88,8 @@
               <div class="max-w-xl">
                 <h2 class="text-6xl font-bold ">Dr Ernest P Chan</h2>
                 <p class="mt-4 text-gray-300 text-2xl">
-                  Ernest P. Chan, is an <a href="https://predictnow.ai/"
+                  Ernest P. Chan, is an <a
+                    href="https://www.linkedin.com/in/epchan/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=ca"
                     class="text-blue-600 hover:text-blue-800 underline hover:no-underline font-medium transition duration-300 ease-in-out">expert</a>
                   in machine learning and the application of quantitative
                   models for asset management.
@@ -113,7 +114,7 @@
                   <div>
                     <h2 class="text-xl font-bold">Chief Scientific Officer</h2>
                     <p class="mt-1 text-md text-gray-300">
-                      founded and serves as Chief Scientific Officer of <a href="https://predictnow.ai/"
+                      Founded and serves as Chief Scientific Officer of <a href="https://predictnow.ai/"
                         class="text-blue-600 hover:text-blue-800 underline hover:no-underline font-medium transition duration-300 ease-in-out">Predictnow.ai</a>
                       that
                       focuses
@@ -137,7 +138,7 @@
                   </span>
 
                   <div>
-                    <h2 class="text-xl font-bold">Chairman</h2>
+                    <h2 class="text-xl font-bold">Investment Management</h2>
                     <p class="mt-1 text-md text-gray-300">
                       He founded and serves as non-executive chairman of <a
                         class="text-blue-600 hover:text-blue-800 underline hover:no-underline font-medium transition duration-300 ease-in-out"
@@ -162,33 +163,10 @@
                   </span>
 
                   <div>
-                    <h2 class="text-xl font-bold">Quantitative Model Specialist</h2>
+                    <h2 class="text-xl font-bold">Quantitative Consulting and Training</h2>
                     <p class="mt-1 text-md text-gray-300">
                       Dr. Chan has built and traded numerous
-                      quantitative models for investment banks and hedge funds in the past.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex items-start gap-4">
-                  <span class="shrink-0 rounded-lg bg-gray-800 p-4">
-                    <svg class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                      <path
-                        d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
-                      </path>
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222">
-                      </path>
-                    </svg>
-                  </span>
-
-                  <div>
-                    <h2 class="text-xl font-bold">Client Focused</h2>
-
-                    <p class="mt-1 text-md text-gray-300">
-                      He has served individual and
+                      quantitative models for investment banks and hedge funds in the past. He has served individual and
                       institutional clients in Australia, Canada, China, France, Germany, India,
                       Israel, Italy, Korea, the
                       Netherlands, Peru, Singapore, South Africa, Sweden, the United Kingdom, and the
@@ -196,6 +174,8 @@
                     </p>
                   </div>
                 </div>
+
+
               </div>
             </div>
           </section>
@@ -208,7 +188,7 @@
         <section>
           <div class="mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
             <header class="text-center">
-              <h2 class="text-6xl font-bold text-white ">Our top rated resources</h2>
+              <h2 class="text-6xl font-bold text-white ">Publications</h2>
             </header>
             <ul class="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4 lg:grid-cols-5">
               <li>

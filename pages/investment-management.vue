@@ -25,8 +25,7 @@
                   <h2 class=" font-bold text-7xl w-min">Capital</h2>
                   <h2 class=" font-bold text-7xl w-min">Management</h2>
                   <h3 class="mt-4  text-xl font-medium text-gray-300  ">QTS Capital Management is a quantitative
-                    trading
-                    firm
+                    investment management company
                     that uses advanced mathematical models and computer algorithms to analyze financial markets and
                     execute
                     automated trading strategies across various asset classes.</h3>
