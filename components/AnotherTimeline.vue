@@ -38,7 +38,7 @@
                         QTS Capital Management</h3>
                     <time
                         class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Non-executive
-                        chairman and founder,</time>
+                        chairman and founder</time>
 
                 </div>
             </li>
@@ -156,8 +156,9 @@
                 </div>
                 <div class="mt-3 sm:pe-8">
                     <h3 class="text-lg font-semibold text-gray-900 text-white">
-                        IBM Research, Research Associate</h3>
-                    <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"></time>
+                        IBM Research</h3>
+                    <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Research
+                        Associate</time>
 
                 </div>
             </li>

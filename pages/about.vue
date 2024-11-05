@@ -20,13 +20,23 @@
 
         <div class="hidden xl:block col-start-2 col-span-3 w-full ">
           <ScrollTransition>
-            <AnotherTimeline></AnotherTimeline>
+            <div class="w-full flex justify-center mt-10">
+              <ol class="flex justify-center">
+                <HorizontalTimelineItem v-for="item in sortedTimelineItems" :key="item.sys.id" :timelineItem="item">
+                </HorizontalTimelineItem>
+              </ol>
+            </div>
           </ScrollTransition>
         </div>
 
         <div class="xl:hidden col-start-2 col-span-3 w-full mt-16">
           <ScrollTransition>
-            <Timeline></Timeline>
+            <div>
+              <ol class="relative border-s border-gray-200 dark:border-gray-700">
+                <VerticalTimelineItem v-for="item in sortedTimelineItems" :key="item.sys.id" :timelineItem="item">
+                </VerticalTimelineItem>
+              </ol>
+            </div>
           </ScrollTransition>
         </div>
       </div>
@@ -41,17 +51,17 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { useRuntimeConfig } from '#imports';
-import Timeline from "../components/Timeline.vue";
-import AnotherTimeline from "../components/AnotherTimeline.vue";
+
 import AboutCard from "../components/AboutCard.vue";
+import HorizontalTimelineItem from "../components/HorizontalTimelineItem.vue";
 
 const config = useRuntimeConfig();
 const profiles = ref([]);
+const sortedTimelineItems = ref([]);
 const spaceName = config.public.CONTENTFUL_SPACE_ID;
 const accessTokenName = config.public.CONTENTFUL_ACCESS_KEY;
 const isLoading = ref(true);
 let client;
-
 onMounted(() => {
   fetchEntries();
   isLoading.value = false
@@ -67,6 +77,13 @@ async function fetchEntries() {
   const res = await client.getEntries({
     content_type: "aboutProfile",
   });
+
   profiles.value = res.items;
+
+  const timelineItemRes = await client.getEntries({
+    content_type: "aboutHorizontalTimeline",
+  });
+
+  sortedTimelineItems.value = timelineItemRes.items.slice().sort((a, b) => a.fields.order - b.fields.order);;
 }
 </script>
