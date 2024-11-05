@@ -1,6 +1,6 @@
 <template>
   <div class="w-screen bg-gray-800">
-    <Navbar />
+    <Navbar page="home" />
     <ScrollTransition>
       <div class="w-full grid xl:grid-cols-3 grid-cols-1">
         <div class="hidden col-start-1 col-span-1 xl:flex justify-center items-center">
