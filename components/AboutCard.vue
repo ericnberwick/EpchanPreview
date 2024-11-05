@@ -3,7 +3,7 @@
     <div class="container mx-auto">
       <div class="grid grid-cols-1 2xl:grid-cols-2">
         <div class="">
-          <img class=" object-cover object-top" src="public/img/ernie_2.jpg" alt="">
+          <img class=" object-cover object-top" :src="'https:' + about.fields.profilePicture.fields.file.url" alt="">
         </div>
         <div class="flex bg-gray-100 p-10">
           <div class="mb-auto mt-auto max-w-2xl">

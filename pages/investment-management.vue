@@ -16,40 +16,8 @@
         </div>
 
         <div class="">
-          <div class="grid grid-cols-5 gap-4 ">
-            <div class="col-span-3 flex items-center justify-center">
-              <ScrollTransition>
-                <div class="ml-48 m-4  w-min lg:ml-0">
-                  <h2 class=" font-bold text-7xl w-min">QTS</h2>
-                  <h2 class=" font-bold text-7xl w-min">Capital</h2>
-                  <h2 class=" font-bold text-7xl w-min">Management</h2>
-                  <h3 class="mt-4  text-xl font-medium text-gray-300  ">QTS Capital Management is a quantitative
-                    investment management company
-                    that uses advanced mathematical models and computer algorithms to analyze financial markets and
-                    execute
-                    automated trading strategies across various asset classes.</h3>
-                  <div class="mt-4 ">
-                    <a class="inline-flex items-center gap-4 rounded border border-indigo-600 bg-indigo-600 px-16 py-4 text-white hover:bg-indigo-800 transition-all hover:text-gray-100 focus:outline-none focus:ring active:text-indigo-500"
-                      href="https://qtscm.com/" target="_blank">
-                      <span class="text-sm font-medium"> Find out more </span>
-
-                      <svg class="size-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </ScrollTransition>
-            </div>
-
-            <div class="col-span-2 col-start-4 lg:block hidden">
-              <ScrollTransition>
-                <img src="public/img/building.jpg" width="600">
-              </ScrollTransition>
-            </div>
-          </div>
+          <InvestmentManagementLandBanner :bannerData="d" v-for="d in bannerData" :key="d.sys.id">
+          </InvestmentManagementLandBanner>
 
           <ScrollTransition>
             <div class="mt-16 grid grid-cols-1 lg:grid-cols-3">
@@ -96,7 +64,21 @@
                   Investor Reviews
                 </h2>
               </div>
-              <InvestorManagementReview></InvestorManagementReview>
+              <div>
+                <section class="bg-gray-800">
+                  <div class="  px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+                    <div class="md:flex md:items-end md:justify-between">
+                      <div class="max-w-xl">
+                      </div>
+                    </div>
+
+                    <div class="mt-8 grid gap-4 grid-cols-1 lg:grid-cols-2">
+                      <InvestorManagementReview v-for="review in reviews" :key="review.sys.id" :review="review">
+                      </InvestorManagementReview>
+                    </div>
+                  </div>
+                </section>
+              </div>
             </div>
           </ScrollTransition>
         </div>
@@ -110,6 +92,42 @@
 
 <script setup>
 import InvestorManagementReview from '../components/Investor-Management-Review.vue';
-import { ref } from "vue";
+import { useRuntimeConfig } from '#imports';
+import { ref, onMounted } from "vue";
+import InvestmentManagementLandBanner from '../components/InvestmentManagementLandBanner.vue';
+
 const isLoading = ref(false);
+
+const config = useRuntimeConfig();
+const reviews = ref([]);
+const bannerData = ref([]);
+const spaceName = config.public.CONTENTFUL_SPACE_ID;
+const accessTokenName = config.public.CONTENTFUL_ACCESS_KEY;
+
+let client;
+
+
+onMounted(() => {
+  fetchEntries();
+  isLoading.value = false;
+});
+
+async function fetchEntries() {
+  const contentful = await import("contentful");
+  client = contentful.createClient({
+    space: spaceName,
+    accessToken: accessTokenName,
+  });
+
+  const res = await client.getEntries({
+    content_type: "investmentManagementReviews",
+  });
+
+  const bannerResult = await client.getEntries({
+    content_type: "investmentManagementLandingBanner",
+  });
+
+  bannerData.value = bannerResult.items;
+  reviews.value = res.items;
+}
 </script>
