@@ -29,8 +29,6 @@
               </NuxtLink>
             </div>
           </div>
-
-
         </div>
         <div class="hidden col-start-2 col-span-2 xl:block">
           <video autoplay loop muted class="w-full">
@@ -174,15 +172,12 @@
                     </p>
                   </div>
                 </div>
-
-
               </div>
             </div>
           </section>
         </div>
       </div>
     </ScrollTransition>
-
     <ScrollTransition>
       <div class="w-full ">
         <section>
@@ -234,14 +229,11 @@
   </div>
 </template>
 
-
-
 <script setup>
 import { ref, onMounted } from "vue";
 import { useRuntimeConfig } from '#imports';
 
 const config = useRuntimeConfig();
-// Define a ref to hold fetched data
 const reviews = ref([]);
 const welcome = ref([]);
 const spaceName = config.public.CONTENTFUL_SPACE_ID;

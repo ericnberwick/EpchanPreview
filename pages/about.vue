@@ -1,7 +1,6 @@
 <template>
   <div class="bg-gray-800  h-screen">
     <Navbar page="about" />
-
     <div class="bg-gray-800">
       <div class="px-8 pt-24  ">
         <div class="container mx-auto text-center">

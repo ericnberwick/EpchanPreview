@@ -17,7 +17,6 @@
 
         <div class="">
           <div class="grid grid-cols-5 gap-4 ">
-
             <div class="col-span-3 flex items-center justify-center">
               <ScrollTransition>
                 <div class="ml-48 m-4  w-min lg:ml-0">
@@ -41,7 +40,6 @@
                       </svg>
                     </a>
                   </div>
-
                 </div>
               </ScrollTransition>
             </div>
@@ -51,7 +49,6 @@
                 <img src="public/img/building.jpg" width="600">
               </ScrollTransition>
             </div>
-
           </div>
 
           <ScrollTransition>
@@ -61,7 +58,6 @@
                   <img src="public/img/calender.svg" width="16px" class="m-4 ">
                   <h2 class="text-4xl font-bold">Founded in 2011</h2>
                 </div>
-
                 <p class="m-4 text-lg font-medium text-gray-300 ">Founded in 2011 by quant hedge fund manager and quant
                   finance author Dr. Ernest Chan, QTS Capital Managment LLC is a global multi-strategy investment
                   management
@@ -72,7 +68,6 @@
                   <img src="public/img/chart-line.svg" width="16px" class="m-4 ">
                   <h2 class="text-4xl font-bold">Data Driven</h2>
                 </div>
-
                 <p class="m-4 text-lg font-medium text-gray-300 ">Led by a team of mathematicians and physicists QTS has
                   developed a proprietary quantitative approach to
                   strategy development and selection with a strong emphasis on uncorrelated risk-adjusted returns and
@@ -91,7 +86,6 @@
                   Association and is registered as a Commodity Pool Operator and Commodity Trading Advisor (NFA ID:
                   0431162). Since 2011, it has served a global clientele spanning 4 continents. </p>
               </div>
-
             </div>
           </ScrollTransition>
 
@@ -105,15 +99,9 @@
               <InvestorManagementReview></InvestorManagementReview>
             </div>
           </ScrollTransition>
-
         </div>
-
-
-
-
       </div>
     </Transition>
-
     <div>
       <Footer></Footer>
     </div>
