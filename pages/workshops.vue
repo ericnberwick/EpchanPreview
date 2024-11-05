@@ -14,8 +14,9 @@
           style="object-position: center bottom;">
         </NuxtImg>
       </div>
-
-      <LoadingCard v-if="isLoading" message="Loading workshops..."></LoadingCard>
+      <div class="mx-8">
+        <LoadingCard v-if="isLoading" message="Loading workshops..."></LoadingCard>
+      </div>
 
       <div v-if="!isLoading" class="mt-24 mx-8">
         <div class="grid gap-8 lg:grid-cols-3 grid-cols-1 ">

@@ -16,7 +16,9 @@
           </NuxtImg>
         </div>
       </div>
-      <LoadingCard v-if="isLoading" message="Loading Books..."></LoadingCard>
+      <div class="mx-8">
+        <LoadingCard v-if="isLoading" message="Loading Books..."></LoadingCard>
+      </div>
 
       <Transition name="fade">
         <div v-if="!isLoading" class=" w-full flex justify-center px-10 bg-gray-800 text-white mb-16">
