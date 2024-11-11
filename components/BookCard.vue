@@ -22,17 +22,18 @@
             <a :href="review.fields.linkToBook"
               class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-blue-gray-900 mb-2 normal-case transition-colors hover:text-green-500">{{
                 review.fields.title }}</a>
-            <RichTextRenderer
-              class="block antialiased font-sans text-base leading-relaxed text-inherit font-normal !text-gray-500"
-              :document="review.fields.description" :renderMark="renderMark" :renderNode="renderNode" />
+            <div class="block antialiased font-sans text-base leading-relaxed text-inherit font-normal text-gray-500">
+              <RichTextRenderer :document="getRichTextProps(review.fields.description)" />
+            </div>
 
             <div class="mt-2" v-if="review.fields.praise">
               <h2
                 class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug  mb-2 normal-case ">
                 Praise</h2>
-              <RichTextRenderer
-                class="mt-8 block antialiased font-sans text-base leading-relaxed text-inherit font-normal !text-gray-500"
-                :document="review.fields.praise" :renderMark="renderMark" :renderNode="renderNode" />
+              <div
+                class="mt-8 block antialiased font-sans text-base leading-relaxed text-inherit font-normal text-gray-500">
+                <RichTextRenderer :document="getRichTextProps(review.fields.praise)" />
+              </div>
             </div>
             <a :href="review.fields.linkToBook">
               <button
@@ -78,4 +79,10 @@ const renderNode = {
   [BLOCKS.HEADING_1]: (node, next) => `<h1>${next(node.content)}</h1>`,
   [BLOCKS.HEADING_2]: (node, next) => `<h2>${next(node.content)}</h2>`,
 }
+
+const getRichTextProps = (content) => ({
+  ...content,
+  renderMark,
+  renderNode
+})
 </script>

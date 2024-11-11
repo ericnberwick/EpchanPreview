@@ -3,17 +3,15 @@
     <div class="container mx-auto">
       <div class="grid grid-cols-1 2xl:grid-cols-2">
         <div class="">
-          <img class=" object-cover object-top" :src="'https:' + about.fields.profilePicture.fields.file.url" alt="">
+          <img class="object-cover object-top" :src="'https:' + about.fields.profilePicture.fields.file.url" alt="">
         </div>
         <div class="flex bg-gray-100 p-10">
           <div class="mb-auto mt-auto max-w-2xl">
-            <h1 class="text-3xl ">{{ about.fields.name }}</h1>
-            <p>
-              <RichTextRenderer :document="about.fields.description" :renderMark="renderMark"
-                :renderNode="renderNode" />
-              <RichTextRenderer class="hidden lg:block" :document="about.fields.description2" :renderMark="renderMark"
-                :renderNode="renderNode" />
-            </p>
+            <h1 class="text-3xl">{{ about.fields.name }}</h1>
+            <RichTextRenderer :document="getRichTextProps(about.fields.description)" />
+            <div class="hidden lg:block">
+              <RichTextRenderer :document="getRichTextProps(about.fields.description2)" />
+            </div>
             <NuxtLink to="/contact">
               <button class="bg-black rounded-md py-3 px-7 mt-6 text-white">Email Me</button>
             </NuxtLink>
@@ -47,6 +45,12 @@ const renderNode = {
   [BLOCKS.HEADING_1]: (node, next) => `<h1>${next(node.content)}</h1>`,
   [BLOCKS.HEADING_2]: (node, next) => `<h2>${next(node.content)}</h2>`,
 }
+
+const getRichTextProps = (content) => ({
+  ...content,
+  renderMark,
+  renderNode
+})
 </script>
 
 <style scoped>
