@@ -24,14 +24,3 @@
         </div>
     </div>
 </template>
-
-<script setup>
-import { defineProps } from 'vue'
-
-defineProps({
-    course: {
-        type: Object,
-        required: true
-    }
-})
-</script>

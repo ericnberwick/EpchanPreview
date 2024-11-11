@@ -397,7 +397,7 @@
                         </div>
 
                         <div class="mt-4">
-                            <p class="text-2xl font-bold text-rose-600 sm:text-3xl">Phenomenal Instructore</p>
+                            <p class="text-2xl font-bold text-rose-600 sm:text-3xl">Phenomenal Instructor</p>
 
                             <p class="mt-4 leading-relaxed text-gray-700">
                                 “Dr. Chan … is a phenomenal instructor…”

@@ -186,38 +186,7 @@
               <h2 class="text-6xl font-bold text-white ">Publications</h2>
             </header>
             <ul class="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4 lg:grid-cols-5">
-              <li>
-                <NuxtLink to="/books" class="group block overflow-hidden ">
-                  <img src="public/img/gen-ai-book.jpg" alt=""
-                    class="h-[350px] w-full object-cover transition duration-500 hover:scale-105 sm:h-[450px]" />
-                </NuxtLink>
-              </li>
-              <li>
-                <NuxtLink to="/books" class="group block overflow-hidden ">
-                  <img src="public/img/aiTrading.jpg" alt=""
-                    class="h-[350px] w-full object-cover transition duration-500 hover:scale-105 sm:h-[450px]" />
-                </NuxtLink>
-              </li>
-              <li>
-                <NuxtLink to="/books" class="group block overflow-hidden ">
-                  <img src="public/img/book.jpg" alt=""
-                    class="h-[350px] w-full object-cover transition duration-500 hover:scale-105 sm:h-[450px]" />
-                </NuxtLink>
-              </li>
-
-              <li>
-                <NuxtLink to="/books" class="group block overflow-hidden ">
-                  <img src="public/img/algo-book.png" alt=""
-                    class="h-[350px] w-full object-cover transition duration-500 hover:scale-105 sm:h-[450px]" />
-                </NuxtLink>
-              </li>
-
-              <li>
-                <NuxtLink to="/books" class="group block overflow-hidden ">
-                  <img src="public/img/machine-book.png" alt=""
-                    class="h-[350px] w-full object-cover transition duration-500 hover:scale-105 sm:h-[450px]" />
-                </NuxtLink>
-              </li>
+              <LandingPageBookCard :book="book" v-for="book in books" :key="book.sys.id"></LandingPageBookCard>
             </ul>
           </div>
         </section>
@@ -232,26 +201,13 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { useRuntimeConfig } from '#imports';
+import LandingPageBookCard from "../components/LandingPageBookCard.vue";
 
 const config = useRuntimeConfig();
-const reviews = ref([]);
-const welcome = ref([]);
+const books = ref([]);
 const spaceName = config.public.CONTENTFUL_SPACE_ID;
 const accessTokenName = config.public.CONTENTFUL_ACCESS_KEY;
-
 let client;
-
-async function fetchWelcome() {
-  const contentful = await import("contentful");
-  client = contentful.createClient({
-    space: spaceName,
-    accessToken: accessTokenName,
-  });
-  const welcomeText = await client.getEntries({
-    content_type: "welcomeText", // Ensure this matches the actual ID in Contentful you can copy this from Content Model on top left
-  });
-  welcome.value = welcomeText.items;
-}
 
 async function fetchEntries() {
   const contentful = await import("contentful");
@@ -264,11 +220,11 @@ async function fetchEntries() {
     content_type: "book",
   });
 
-  reviews.value = res.items;
+  books.value = res.items.slice().sort((a, b) => a.fields.order - b.fields.order).slice(0, 5);
+
 }
 
 onMounted(() => {
-  fetchWelcome();
   fetchEntries();
 });
 </script>
