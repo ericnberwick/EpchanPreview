@@ -23,7 +23,7 @@
               class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-blue-gray-900 mb-2 normal-case transition-colors hover:text-green-500">{{
                 review.fields.title }}</a>
             <div class="block antialiased font-sans text-base leading-relaxed text-inherit font-normal text-gray-500">
-              <RichTextRenderer :document="getRichTextProps(review.fields.description)" />
+              <RichTextRenderer :document="review.fields.description" />
             </div>
 
             <div class="mt-2" v-if="review.fields.praise">
@@ -32,7 +32,7 @@
                 Praise</h2>
               <div
                 class="mt-8 block antialiased font-sans text-base leading-relaxed text-inherit font-normal text-gray-500">
-                <RichTextRenderer :document="getRichTextProps(review.fields.praise)" />
+                <RichTextRenderer :document="review.fields.praise" />
               </div>
             </div>
             <a :href="review.fields.linkToBook">
@@ -49,7 +49,6 @@
 <script setup>
 import { defineProps, onMounted, ref } from 'vue'
 import RichTextRenderer from 'contentful-rich-text-vue-renderer';
-import { BLOCKS, MARKS } from '@contentful/rich-text-types'
 
 const props = defineProps({
   review: {
@@ -67,22 +66,4 @@ onMounted(() => {
     praiseExists.value = false;
   }
 });
-
-const renderMark = {
-  [MARKS.BOLD]: (text) => `<strong>${text}</strong>`,
-  [MARKS.ITALIC]: (text) => `<em>${text}</em>`,
-  [MARKS.UNDERLINE]: (text) => `<u>${text}</u>`,
-}
-
-const renderNode = {
-  [BLOCKS.PARAGRAPH]: (node, next) => `<p style="white-space: pre-wrap;">${next(node.content)}</p>`,
-  [BLOCKS.HEADING_1]: (node, next) => `<h1>${next(node.content)}</h1>`,
-  [BLOCKS.HEADING_2]: (node, next) => `<h2>${next(node.content)}</h2>`,
-}
-
-const getRichTextProps = (content) => ({
-  ...content,
-  renderMark,
-  renderNode
-})
 </script>
