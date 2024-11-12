@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen h-screen bg-gray-800">
+  <div class="h-screen bg-gray-800">
     <Navbar page="email" />
     <ScrollTransition>
       <div class="bg-gray-800">

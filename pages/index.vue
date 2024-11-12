@@ -1,80 +1,79 @@
 <template>
-  <div class="w-screen bg-gray-800">
+  <div class="bg-gray-800">
     <Navbar page="home" />
-    <ScrollTransition>
-      <div class="w-full grid xl:grid-cols-3 grid-cols-1">
-        <div class="hidden col-start-1 col-span-1 xl:flex justify-center items-center">
-          <div class="w-full">
-            <div class="w-full flex justify-center items-center ">
-              <h2 id="title" class="font-bold text-white text-center ">Welcome to E.P.
-                Chan &
-                Associates</h2>
-            </div>
-            <div class=" flex justify-center items-center ">
-              <p class="text-lg font-medium text-gray-300 w-1/2 text-center">
-                Insights on Applications of AI and Quantitative Analytics to Asset Management and Beyond
-              </p>
-            </div>
-            <div class="flex flex-wrap justify-center gap-4 mt-4">
-              <NuxtLink
-                class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
-                to="/workshops">
-                Get Started
-              </NuxtLink>
+    <div class="w-full grid xl:grid-cols-3 grid-cols-1">
+      <div class="hidden col-start-1 col-span-1 xl:flex justify-center items-center">
+        <div class="w-full">
+          <div class="w-full flex justify-center items-center ">
+            <h2 id="title" class="font-bold text-white text-center ">Welcome to E.P.
+              Chan &
+              Associates</h2>
+          </div>
+          <div class=" flex justify-center items-center ">
+            <p class="text-lg font-medium text-gray-300 w-1/2 text-center">
+              Insights on Applications of AI and Quantitative Analytics to Asset Management and Beyond
+            </p>
+          </div>
+          <div class="flex flex-wrap justify-center gap-4 mt-4">
+            <NuxtLink
+              class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
+              to="/workshops">
+              Get Started
+            </NuxtLink>
 
-              <NuxtLink
-                class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
-                to="/financial-machine-learning">
-                Learn More
-              </NuxtLink>
-            </div>
+            <NuxtLink
+              class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
+              to="/financial-machine-learning">
+              Learn More
+            </NuxtLink>
           </div>
         </div>
-        <div class="hidden col-start-2 col-span-2 xl:block">
-          <video autoplay loop muted class="w-full">
+      </div>
+      <div class="hidden col-start-2 col-span-2 xl:block">
+        <video autoplay loop muted class="w-full">
+          <source src="public/img/finance.mp4" type="video/webm" />
+        </video>
+      </div>
+
+      <div class="xl:hidden col-start-1 col-span-1 flex justify-center items-center">
+        <div class="relative ">
+          <video autoplay loop muted class="w-full hidden md:block">
             <source src="public/img/finance.mp4" type="video/webm" />
           </video>
-        </div>
+          <img class="block md:hidden" src="public/img/mobile-land.jpg">
+          <div class="absolute inset-0 flex items-start mt-10 justify-center">
+            <div class="w-full">
+              <div class="w-full flex justify-center items-center">
+                <h2 id="title" class="font-bold text-white text-center">Welcome to E.P.
+                  Chan &
+                  Associates</h2>
+              </div>
+              <div class=" flex justify-center items-center ">
+                <p class="text-lg font-medium text-gray-300 w-1/2 text-center">
+                  Insights on Applications of AI and Quantitative Analytics to Asset Management and
+                  Beyond
+                </p>
+              </div>
+              <div class="flex flex-wrap justify-center gap-2 mt-4">
+                <NuxtLink
+                  class="block w-full rounded border md:border-blue-600 bg-blue-800 md:bg-blue-600 px-12 py-2 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto w-2/6 mx-20 sm:mx-0"
+                  to="/workshops">
+                  Get Started
+                </NuxtLink>
 
-        <div class="xl:hidden col-start-1 col-span-1 flex justify-center items-center">
-          <div class="relative ">
-            <video autoplay loop muted class="w-full hidden md:block">
-              <source src="public/img/finance.mp4" type="video/webm" />
-            </video>
-            <img class="block md:hidden" src="public/img/mobile-land.jpg">
-            <div class="absolute inset-0 flex items-start mt-10 justify-center">
-              <div class="w-full">
-                <div class="w-full flex justify-center items-center">
-                  <h2 id="title" class="font-bold text-white text-center">Welcome to E.P.
-                    Chan &
-                    Associates</h2>
-                </div>
-                <div class=" flex justify-center items-center ">
-                  <p class="text-lg font-medium text-gray-300 w-1/2 text-center">
-                    Insights on Applications of AI and Quantitative Analytics to Asset Management and
-                    Beyond
-                  </p>
-                </div>
-                <div class="flex flex-wrap justify-center gap-2 mt-4">
-                  <NuxtLink
-                    class="block w-full rounded border md:border-blue-600 bg-blue-800 md:bg-blue-600 px-12 py-2 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto w-2/6 mx-20 sm:mx-0"
-                    to="/workshops">
-                    Get Started
-                  </NuxtLink>
-
-                  <NuxtLink
-                    class="block w-full rounded border bg-blue-800 md:bg-black px-12 py-2 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto w-2/6 mx-20 sm:mx-0"
-                    to="/financial-machine-learning">
-                    Learn More
-                  </NuxtLink>
-                </div>
+                <NuxtLink
+                  class="block w-full rounded border bg-blue-800 md:bg-black px-12 py-2 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto w-2/6 mx-20 sm:mx-0"
+                  to="/financial-machine-learning">
+                  Learn More
+                </NuxtLink>
               </div>
             </div>
           </div>
         </div>
-
       </div>
-    </ScrollTransition>
+
+    </div>
+
     <ScrollTransition>
       <div class="w-full grid grid-cols-1 lg:grid-cols-3">
         <div class="col-start-1 col-span-1 flex items-center justify-center ">
