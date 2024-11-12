@@ -10,7 +10,7 @@
       </div>
 
       <div class="w-full h-56 overflow-hidden">
-        <NuxtImg src="img/finance-banner.jpg" class="w-full  object-cover">
+        <NuxtImg src="img/finance-banner-2.jpg" class="w-full  object-cover">
         </NuxtImg>
       </div>
 
