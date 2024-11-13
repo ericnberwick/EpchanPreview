@@ -26,12 +26,12 @@
               <RichTextRenderer :document="review.fields.description" />
             </div>
 
-            <div class="mt-2" v-if="review.fields.praise">
+            <div class="mt-4" v-if="review.fields.praise">
               <h2
                 class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug  mb-2 normal-case ">
                 Praise</h2>
               <div
-                class="mt-8 block antialiased font-sans text-base leading-relaxed text-inherit font-normal text-gray-500">
+                class="mt-2 block antialiased font-sans text-base leading-relaxed text-inherit font-normal text-gray-500">
                 <RichTextRenderer :document="review.fields.praise" />
               </div>
             </div>

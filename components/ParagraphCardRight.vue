@@ -13,7 +13,7 @@
                         <div class="xl:col-span-3">
                             <div class="max-w-sm mx-auto sm:max-w-md md:max-w-full">
                                 <h1
-                                    class="text-4xl font-bold leading-tight text-white sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">
+                                    class="ml-4 text-4xl font-bold leading-tight text-white sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">
                                     {{
                                         paragraph.fields.title }}</h1>
                                 <div class="mt-8 lg:mt-12 lg:flex lg:items-center">

@@ -6,7 +6,7 @@
                     <div class="text-center xl:col-span-2 lg:text-left md:px-16 lg:px-0">
                         <div class="max-w-sm mx-auto sm:max-w-md md:max-w-full">
                             <h1
-                                class="text-4xl font-bold leading-tight text-white sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">
+                                class="ml-4 text-4xl font-bold leading-tight text-white sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">
                                 {{ paragraph.fields.title ?? 'Default Title' }}
                             </h1>
                             <div class="mt-8 lg:mt-12 lg:flex lg:items-center">
@@ -16,12 +16,17 @@
                             </div>
                         </div>
                     </div>
-                    <div v-if="paragraph.fields.image?.fields?.file?.url" class="xl:col-span-3">
-                        <a :href="paragraph.fields.linkPicture ?? '#'"
+                    <div v-if="paragraph.fields.image?.fields?.file?.url"
+                        class="xl:col-span-3  xl:block flex justify-center">
+                        <a v-if="paragraph.fields.linkPicture" :href="paragraph.fields.linkPicture ?? '#'"
                             class="inline-block transform transition duration-300 ease-in-out hover:rotate-2 hover:-translate-y-1">
                             <img class="max-w-sm md:max-w-md xl:max-w-xl rounded-xl h-auto mx-auto"
                                 :src="'https:' + paragraph.fields.image.fields.file.url" alt="" />
                         </a>
+                        <div v-else :href="paragraph.fields.linkPicture ?? '#'" class="inline-block ">
+                            <img class="max-w-sm md:max-w-md xl:max-w-xl rounded-xl h-auto mx-auto"
+                                :src="'https:' + paragraph.fields.image.fields.file.url" alt="" />
+                        </div>
                     </div>
                 </div>
             </div>
