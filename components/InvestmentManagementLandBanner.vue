@@ -2,9 +2,9 @@
   <div class="grid grid-cols-5 gap-4 ">
     <div class="col-span-3 flex items-center justify-center">
       <div class="ml-48 m-4  w-min lg:ml-0">
-        <h2 class=" font-bold text-7xl w-min">QTS</h2>
-        <h2 class=" font-bold text-7xl w-min">Capital</h2>
-        <h2 class=" font-bold text-7xl w-min">Management</h2>
+        <h2 class=" font-bold text-6xl md:text-7xl w-min">QTS</h2>
+        <h2 class=" font-bold text-6xl md:text-7xl w-min">Capital</h2>
+        <h2 class=" font-bold text-6xl md:text-7xl w-min">Management</h2>
         <h3 class="mt-4  text-xl font-medium text-gray-300  ">{{ bannerData.fields.description }}</h3>
         <div class="mt-4 ">
           <a class="inline-flex items-center gap-4 rounded border border-indigo-600 bg-indigo-600 px-16 py-4 text-white hover:bg-indigo-800 transition-all hover:text-gray-100 focus:outline-none focus:ring active:text-indigo-500"
