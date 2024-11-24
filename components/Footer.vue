@@ -5,9 +5,12 @@
                 <div class="w-full mx-auto flex flex-wrap">
                     <div class="flex w-full lg:w-1/2 ">
                         <div class="px-3 md:px-0">
-                            <p class="py-4 text-white">
+                            <p class=" text-white">
                                 2022 . E.P. Chan & Associates
                             </p>
+                            <p class="text-white"><a href="/" class="hover:text-blue-700 underline"><i>Created by
+                                        Gallagher Web
+                                        Services</i></a></p>
                         </div>
                     </div>
                     <div class="flex w-full lg:w-1/2 lg:justify-end lg:text-right mt-6 md:mt-0">
