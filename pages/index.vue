@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="hidden col-start-2 col-span-2 xl:block">
-        <img class="w-full" src="public/img/finance.gif" />
+        <img class="w-full" src="public/img/finance3.gif" />
       </div>
 
       <div class="xl:hidden col-start-1 col-span-1 flex justify-center items-center">
