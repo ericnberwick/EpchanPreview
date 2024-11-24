@@ -30,9 +30,7 @@
         </div>
       </div>
       <div class="hidden col-start-2 col-span-2 xl:block">
-        <video autoplay loop muted class="w-full">
-          <source src="public/img/finance.mp4" type="video/webm" />
-        </video>
+        <img class="w-full" src="public/img/finance.gif" />
       </div>
 
       <div class="xl:hidden col-start-1 col-span-1 flex justify-center items-center">
