@@ -9,8 +9,8 @@
                                 2022 . E.P. Chan & Associates
                             </p>
                             <p class="text-white"><a href="/" class="hover:text-blue-700 underline"><i>Created by
-                                        Gallagher Web
-                                        Services</i></a></p>
+                                        MacErlane Web
+                                        Solutions</i></a></p>
                         </div>
                     </div>
                     <div class="flex w-full lg:w-1/2 lg:justify-end lg:text-right mt-6 md:mt-0">
