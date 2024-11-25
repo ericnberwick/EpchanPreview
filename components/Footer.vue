@@ -18,7 +18,8 @@
                             <div class="w-full flex items-center py-4 mt-0">
                                 <a href="https://www.linkedin.com/in/epchan/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=ca"
                                     class="mx-2">
-                                    <img class="w-32 fill-current" src="public/img/LinkedIn_2021.svg">
+                                    <img class="w-32 fill-current" src="public/img/LinkedIn_2021.svg"
+                                        alt="LinkedIn Logo Graphic">
                                 </a>
                             </div>
                         </div>
