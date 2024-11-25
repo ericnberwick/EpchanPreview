@@ -30,15 +30,15 @@
         </div>
       </div>
       <div class="hidden col-start-2 col-span-2 xl:block">
-        <img class="w-full" src="public/img/finance3.gif" />
+        <img class="w-full" src="public/img/finance3.gif" alt="Financial Chart Background" />
       </div>
 
       <div class="xl:hidden col-start-1 col-span-1 flex justify-center items-center">
         <div class="relative ">
           <video autoplay loop muted class="w-full hidden md:block">
-            <source src="public/img/finance.mp4" type="video/webm" />
+            <source src="public/img/finance.mp4" type="video/webm" alt="Video of Financial Chart" />
           </video>
-          <img class="block md:hidden" src="public/img/mobile-land.jpg">
+          <img class="block md:hidden" src="public/img/mobile-land.jpg" alt="Financial background of laptop">
           <div class="absolute inset-0 flex items-start mt-10 justify-center">
             <div class="w-full">
               <div class="w-full flex justify-center items-center">
@@ -74,7 +74,7 @@
 
     <div class="w-full grid grid-cols-1 lg:grid-cols-3">
       <div class="col-start-1 col-span-1 flex items-center justify-center ">
-        <img src="public/img/ernie_2.jpg" class="object-cover w-full">
+        <img src="public/img/ernie_2.jpg" class="object-cover w-full" alt="Portrait picture of Ernest P Chan">
       </div>
       <div class="col-start-2 col-span-3 flex justify-start mt-20 md:mt-0">
         <section class="bg-gray-800 text-white ">
@@ -198,7 +198,14 @@
 import { ref, onMounted } from "vue";
 import { useRuntimeConfig } from '#imports';
 import LandingPageBookCard from "../components/LandingPageBookCard.vue";
+import { useHead } from '#app'
 
+useHead({
+  title: 'E.P. Chan & Associates Home Page',
+  meta: [
+    { name: 'E.P. Chan & Associates Home Page', content: 'Discover quant resources, books, courses and more' }
+  ]
+})
 const config = useRuntimeConfig();
 const books = ref([]);
 const spaceName = config.public.CONTENTFUL_SPACE_ID;
