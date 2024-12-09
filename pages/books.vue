@@ -23,11 +23,8 @@
       <Transition name="fade">
         <div v-if="!isLoading" class=" w-full flex justify-center px-10 bg-gray-800 text-white mb-16">
           <div class=" grid gap-8 grid-cols-1  text-white">
-            <div v-for="review in reviews" :key="review.sys.id">
-              <ScrollTransition>
-                <BookCard :review="review" class="w-full" />
-              </ScrollTransition>
-            </div>
+            <BookCard v-for="review in reviews" :key="review.sys.id" :review="review" class="w-full" />
+            <PreviewBook class=""></PreviewBook>
           </div>
         </div>
       </Transition>
@@ -41,6 +38,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { useRuntimeConfig } from '#imports';
+import PreviewBook from "../components/PreviewBook.vue";
 
 const config = useRuntimeConfig();
 const reviews = ref([]);
