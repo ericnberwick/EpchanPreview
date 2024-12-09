@@ -8,7 +8,8 @@
         <div class="flex bg-gray-100 p-10">
           <div class="mb-auto mt-auto max-w-2xl">
             <h1 class="text-3xl">{{ about.fields.name }}</h1>
-            <p>
+            <RichTextRenderer :document="about.fields.description" />
+            <!-- <p>
               "Dr. Chan is the founder of Predictnow.ai and QTS Capital Management. Ernie’s career since 1994 has been
               focusing on the development of statistical models and advanced computer algorithms to find patterns and
               trends in large quantities of data. He has applied his expertise in machine learning at IBM T.J. Watson
@@ -38,7 +39,7 @@
             <p>
               Ernie holds a Bachelor of Science degree from University of Toronto in 1988, a Master of Science (1991)
               and a Doctor of Philosophy (1994) degree in theoretical physics from Cornell University.
-            </p>
+            </p> -->
             <NuxtLink to="/contact">
               <button class="bg-black rounded-md py-3 px-7 mt-6 text-white">Email Me</button>
             </NuxtLink>

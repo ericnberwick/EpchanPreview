@@ -24,7 +24,6 @@
         <div v-if="!isLoading" class=" w-full flex justify-center px-10 bg-gray-800 text-white mb-16">
           <div class=" grid gap-8 grid-cols-1  text-white">
             <BookCard v-for="review in reviews" :key="review.sys.id" :review="review" class="w-full" />
-            <PreviewBook class=""></PreviewBook>
           </div>
         </div>
       </Transition>
